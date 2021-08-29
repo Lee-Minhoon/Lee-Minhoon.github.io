@@ -1,40 +1,33 @@
+import { resume } from './resume';
 import Header from './components/Header'
-import Skill from './components/Skill'
-import Content from './components/Content'
+import Summary from './components/Summary'
+import Education from './components/Education'
+import Skills from './components/Skills'
+import Contents from './components/Contents'
 import Footer from './components/Footer'
 import { Component } from 'react';
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      skills: [
-        {
-          category: 'Frontend', techs: [
-            'Java', 'C++'
-          ]
-        },
-        {
-          category: 'Backend', techs: [
-            'Java', 'C++'
-          ]
-        }
-      ],
-      contents: [
-        { title: '제목1', desc: '설명1' },
-        { title: '제목2', desc: '설명2' },
-        { title: '제목3', desc: '설명3' },
-        { title: '제목4', desc: '설명4' }
-      ]
-    }
+    const meta = document.createElement('meta');
+    meta.name = 'viewport';
+    meta.content = 'width=device-width, initial-scale=1.0';
+    document.getElementsByTagName('head')[0].appendChild(meta);
+    this.state = resume;
   }
   render() {
     return (
       <div className="App">
-        <Header></Header>
-        <Skill skills={this.state.skills} ></Skill>
-        <Content contents={this.state.contents}></Content>
-        <Footer></Footer>
+        <Header header={this.state.header}></Header>
+        <Summary summary={this.state.summary}></Summary>
+        <Education education={this.state.education} ></Education>
+        <Skills skills={this.state.skills} ></Skills>
+        <Contents contents={this.state.experience}></Contents>
+        <Contents contents={this.state.projects}></Contents>
+        <Contents contents={this.state.awards}></Contents>
+        <Contents contents={this.state.research}></Contents>
+        <Footer footer={this.state.footer}></Footer>
       </div >
     );
   }

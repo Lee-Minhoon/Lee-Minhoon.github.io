@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 0px auto;
+}
+
+body {
+    width: 1200px;
+    h1 {
+        
+        background-color: blue;
+    }
+    h2 {
+        
+        background-color: yellow;
+    }
+    h3 {
+        
+        background-color: purple;
+    }
+    background-color: #F2F4F7;
+}
+
+.Summary {
+    img {
+        margin: 30px;
+        width: 250px;
+        height: 250px;
+        border-radius: 70%;
+    }
+}
+
+.Row {
+    min-height: 100px;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.Intro {
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+.Description {
+    float: left;
+    width: 75%;
+    height: 100%;
+}
