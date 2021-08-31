@@ -6,17 +6,23 @@ export var resume = {
         blog: 'https://hackids.tistory.com/'
     },
     summary: { profile: 'profile.jpg', intro: '설명' },
-    education: [
-        { title: '동서대학교 졸업', period: '2014.03 ~ 2021.02', desc: '전 : 컴퓨터공학전공 / 부 : AI공학전공' },
-        { title: '남일고등학교 졸업', period: '2011.03 ~ 2014.02', desc: '설명1' }
-    ],
-    skills: [
-        { category: 'Frontend', techs: ['Java', 'C++'] },
-        { category: 'Backend', techs: ['Java', 'C++'] },
-        { category: 'DevOps', techs: ['Java', 'C++'] }
-    ],
+    education: {
+        subject: 'Education',
+        contents: [
+            { title: '동서대학교 졸업', period: '2014.03 ~ 2021.02', desc: '전 : 컴퓨터공학전공 / 부 : AI공학전공' },
+            { title: '남일고등학교 졸업', period: '2011.03 ~ 2014.02', desc: '설명1' }
+        ]
+    },
+    skills: {
+        subject: 'Skills',
+        contents: [
+            { category: 'Frontend', techs: ['Java', 'C++'] },
+            { category: 'Backend', techs: ['Java', 'C++'] },
+            { category: 'DevOps', techs: ['Java', 'C++'] }
+        ]
+    },
     experience: {
-        subject: 'experience',
+        subject: 'Experience',
         contents: [
             {
                 title: '제목1', link: 'https://github.com/Lee-Minhoon', period: '2014.07~',
@@ -37,7 +43,7 @@ export var resume = {
         ]
     },
     projects: {
-        subject: 'projects',
+        subject: 'Projects',
         contents: [
             {
                 title: '광학음악인식 기반 자동 편곡 시스템',
@@ -84,7 +90,7 @@ export var resume = {
         ]
     },
     awards: {
-        subject: 'awards',
+        subject: 'Awards',
         contents: [
             {
                 title: '2020년도 온택트기반 동서인 FAIR - 최우수상',
@@ -119,10 +125,11 @@ export var resume = {
         ]
     },
     research: {
-        subject: 'research',
+        subject: 'Research',
         contents: [
             {
                 title: 'Journal of The Korean Institute of Intelligent Systems',
+                subtitle: 'Optical Music Recognition-based Auto Arrangement System',
                 link: 'https://m.blog.naver.com/computer_ck/221128532267',
                 period: '2020.01.18',
                 desc: [
@@ -132,6 +139,7 @@ export var resume = {
             },
             {
                 title: '컴퓨터공학부졸업논문집',
+                subtitle: '광학음악인식 기반 자동 편곡 시스템',
                 link: 'https://m.blog.naver.com/computer_ck/221128532267',
                 period: '2020.11.28',
                 desc: [
@@ -141,6 +149,7 @@ export var resume = {
             },
             {
                 title: '한국지능시스템학회 30주년 기념 2020 추계학술대회',
+                subtitle: '광학음악인식 기반 자동 편곡 시스템',
                 link: 'https://m.blog.naver.com/computer_ck/221128532267',
                 period: '2020.11.28',
                 desc: [
@@ -150,6 +159,7 @@ export var resume = {
             },
             {
                 title: '발명 특허 출원',
+                subtitle: '악보 인식 기반 편곡 장치 및 악보 인식 기반 편곡 방법',
                 link: 'https://m.blog.naver.com/computer_ck/221128532267',
                 period: '2020.11.10',
                 desc: [
@@ -158,6 +168,7 @@ export var resume = {
             },
             {
                 title: 'ICCT2020 SCOPUS',
+                subtitle: 'Computer-Vision-based Advanced Optical Music Recognition System',
                 link: 'https://m.blog.naver.com/computer_ck/221128532267',
                 period: '2020.08.31',
                 desc: [
@@ -167,6 +178,7 @@ export var resume = {
             },
             {
                 title: 'The 10th International Conference on Convergence Technology in 2020',
+                subtitle: 'Advanced Optical Music Recognition System for Automatic Arrangement',
                 link: 'https://m.blog.naver.com/computer_ck/221128532267',
                 period: '2020.07.09',
                 desc: [

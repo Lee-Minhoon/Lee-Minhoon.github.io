@@ -2,7 +2,8 @@ import { Component } from 'react';
 
 class App extends Component {
 	render() {
-		var header = this.props.header;
+		const header = this.props.header;
+
 		return (
 			<div>
 				{header.name}

@@ -2,7 +2,8 @@ import { Component } from 'react';
 
 class App extends Component {
 	render() {
-		var footer = this.props.footer;
+		const footer = this.props.footer;
+
 		return (
 			<div>
 				{footer}
