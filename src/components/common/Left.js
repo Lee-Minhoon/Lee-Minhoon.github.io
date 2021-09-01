@@ -7,8 +7,8 @@ class App extends Component {
 
         return (
             <div className={styles.Left}>
-                <h2>{content.period}</h2>
-                <a href={content.link}>{content.link}</a>
+                <h4>{content.period}</h4>
+                <a href={content.link} target='_blank' rel='noopener noreferrer'>{content.link}</a>
             </div>
         );
     }

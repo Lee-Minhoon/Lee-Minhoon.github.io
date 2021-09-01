@@ -1,9 +1,9 @@
 import { resume } from './resume';
-import Header from './components/Header'
-import Summary from './components/Summary'
-import Education from './components/education/Wrapper'
-import Skills from './components/skills/Wrapper'
-import Common from './components/common/Wrapper'
+import Header from './components/header/Container'
+import Summary from './components/summary/Container'
+import Education from './components/education/Container'
+import Skills from './components/skills/Container'
+import Common from './components/common/Container'
 import Footer from './components/Footer'
 import { Component } from 'react';
 
@@ -15,8 +15,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header header={this.state.header}></Header>
-        <Summary summary={this.state.summary}></Summary>
+        <Header contents={this.state.header}></Header>
+        <Summary contents={this.state.summary}></Summary>
         <Education contents={this.state.education} ></Education>
         <Skills contents={this.state.skills} ></Skills>
         <Common contents={this.state.experience}></Common>

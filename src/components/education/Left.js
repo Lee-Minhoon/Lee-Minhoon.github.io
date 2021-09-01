@@ -7,7 +7,7 @@ class App extends Component {
 
         return (
             <div className={styles.Left}>
-                <h2>{content.period}</h2>
+                <h4>{content.period}</h4>
             </div>
         );
     }

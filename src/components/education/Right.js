@@ -7,7 +7,7 @@ class App extends Component {
 
         return (
             <div className={styles.Right}>
-                <h2>{content.title}</h2>
+                <h4>{content.title}</h4>
                 <li>{content.desc}</li>
             </div>
         );

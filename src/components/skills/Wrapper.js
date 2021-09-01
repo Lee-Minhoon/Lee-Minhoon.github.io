@@ -1,16 +1,16 @@
-import Row from './Row'
+import styles from '../../styles.module.scss';
+import Left from './Left'
+import Right from './Right'
 import { Component } from 'react';
 
 class App extends Component {
     render() {
-        const subject = this.props.contents.subject;
-        const contents = this.props.contents.contents;
-        const row = contents.map((content) => (<Row content={content}></Row>))
+        const content = this.props.content;
 
         return (
-            <div>
-                <h1>{subject}</h1>
-                {row}
+            <div className={styles.Wrapper}>
+                <Left content={content}></Left>
+                <Right content={content}></Right>
             </div>
         );
     }

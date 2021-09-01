@@ -8,7 +8,7 @@ class App extends Component {
         const content = this.props.content;
 
         return (
-            <div className={styles.Row}>
+            <div className={styles.Wrapper}>
                 <Left content={content}></Left>
                 <Right content={content}></Right>
             </div>

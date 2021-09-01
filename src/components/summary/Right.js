@@ -6,8 +6,8 @@ class App extends Component {
         const content = this.props.content;
 
         return (
-            <div className={styles.Left}>
-                <h4>{content.category}</h4>
+            <div className={styles.Right}>
+                <p>{content.intro}</p>
             </div>
         );
     }
