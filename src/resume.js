@@ -1,19 +1,42 @@
 import { icons } from './icons';
 
-export var resume = {
+export const resume = {
     header: {
         name: '이민훈',
-        desc: '프로그래머',
+        desc: '프로그래머 지망생',
         email: 'hackids@naver.com',
         github: 'https://github.com/',
         blog: 'https://hackids.tistory.com/'
     },
-    summary: { subject: 'Summary', profile: 'profile.jpg', intro: '안녕하세요' },
+    summary: {
+        subject: 'Summary',
+        profile: 'profile.jpg',
+        intro: `
+        안녕하세요! 개발자 지망생 이민훈입니다. 뭔가를 만드는 것, 문제를 해결하는 것을
+        좋아하다 보니 어릴 때 부터 자연스레 개발자를 꿈꾸게 되었습니다. 그 꿈이 변치않아
+        현재도 개발자로 일하기위해 다양한 준비들을 하고 있습니다. 대학 생활 중 안드로이드
+        어플리케이션 개발, 웹 개발 등의 여러 프로젝트에 프론트엔드와 백엔드 가리지 않고
+        열심히 참여하였으며, 졸업후에는 알고리즘 공부, 자격증 취득, 안해봤던 기술 공부 등을
+        하고 있습니다. \n프로그래머라는
+        `
+    },
     education: {
         subject: 'Education',
         contents: [
-            { title: '동서대학교 졸업', period: '2014.03 ~ 2021.02', desc: '전 : 컴퓨터공학전공 / 부 : AI공학전공' },
-            { title: '남일고등학교 졸업', period: '2011.03 ~ 2014.02', desc: '설명1' }
+            {
+                title: '동서대학교 졸업',
+                subtitle: '전 : 컴퓨터공학전공 / 부 : AI공학전공',
+                period: '2014.03 ~ 2021.02',
+                desc: [],
+                keywords: []
+            },
+            {
+                title: '부산남일고등학교 졸업',
+                subtitle: '부산광역시 수영구 망미동',
+                period: '2011.03 ~ 2014.02',
+                desc: [],
+                keywords: []
+            }
         ]
     },
     skills: {
@@ -62,7 +85,7 @@ export var resume = {
                     '사용자는 편곡하고자 하는 음악의 악보를 입력하고 편곡된 음악 파일을 제공 받음',
                     '크게 광학 음악 인식 모듈과 자동 편곡 모듈로 구성',
                     '광학 음악 인식 모듈에 OpenCV 라이브러리를 사용하였으며, 속도를 위해 jni + ndk를 사용함',
-                    '클라이언트는 안드로이드 애플리케이션, 서버는 파이썬으로 구성'
+                    '클라이언트는 안드로이드 애플리케이션, 서버는 파이썬으로 구현'
                 ],
                 keywords: [icons.C, icons.Cpp, icons.Java, icons.Python, icons.OpenCV, icons.Android]
             },
@@ -71,7 +94,11 @@ export var resume = {
                 subtitle: '데이터베이스설계 교과목 연계 프로젝트',
                 link: 'https://github.com/Lee-Minhoon/PC-auction',
                 period: '2019.09 ~ 2019.12',
-                desc: ['~~한 프로젝트', '222'],
+                desc: [
+                    'PC부품에 대한 지식 없이 조립형 PC를 구매할 수 있는 PC견적 및 경매 사이트',
+                    '로그인, 로그아웃, 회원가입, 역경매/입찰, 페이징, 관리자 페이지 등의 기능 제공',
+                    'HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현'
+                ],
                 keywords: [icons.HTML, icons.CSS, icons.JavaScript, icons.PHP, icons.MySQL]
             },
             {
@@ -223,6 +250,32 @@ export var resume = {
                     '논문명 : Advanced Optical Music Recognition System for Automatic Arrangement'
                 ],
                 keywords: [icons.Cpp, icons.Cpp]
+            }
+        ]
+    },
+    certificate: {
+        subject: 'Certificate',
+        contents: [
+            {
+                title: '정보처리기사',
+                subtitle: '한국산업인력공단',
+                period: '2021.06.02',
+                desc: [],
+                keywords: []
+            },
+            {
+                title: '컴퓨터활용능력 1급',
+                subtitle: '대한상공회의소 자격평가사업단',
+                period: '2020.03.13',
+                desc: [],
+                keywords: []
+            },
+            {
+                title: '워드프로세서',
+                subtitle: '대한상공회의소 자격평가사업단',
+                period: '2020.02.07',
+                desc: [],
+                keywords: []
             }
         ]
     },

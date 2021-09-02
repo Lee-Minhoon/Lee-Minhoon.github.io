@@ -19,7 +19,7 @@
 }
 
 html {
-    padding-top: 50px;
+    padding-top: 60px;
     width: 1200px;
     font-size: 10px;
     line-height: 2;
@@ -31,7 +31,7 @@ html {
         @include font(black, normal, 400, 4rem);
     }
     h2 {
-        @include font(black, normal, 300, 2rem);
+        @include font(gray, normal, 300, 2rem);
     }
 }
 
@@ -78,19 +78,44 @@ html {
     width: 70%;
     height: 100%;
     a {
+        margin-left: 1rem;
+        display: inline-block;
         position: relative;
+        width: 5.5rem;
+        height: 5.5rem;
+        text-align: center;
+        color: #fff;
+        transition: color 0.3s;
         &::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
-            width: 60px;
-            height: 60px;
-            border-radius: 100%;
+            width: inherit;
+            height: inherit;
             z-index: -1;
-            box-shadow: inset 0 0 0 35px #333;
-            transform: scale3d(0.9, 0.9, 1);
-            transition: box-shadow 0.3s, transform 0.3s
+            box-sizing: inherit;
+            box-shadow: inset 0 0 0 30px #333;
+            border-radius: 50%;
+            transition: box-shadow 0.3s;
+        }
+        &:hover {
+            color: #333;
+            &::before {
+                border: solid 2px white;
+                border-top: solid 2px #333;
+                box-shadow: inset 0 0 0 2px #333;
+                animation: {
+                    name: spin;
+                    duration: 1s;
+                    iteration-count: infinite;
+                    timing-function: linear;
+                }
+            }
+        }
+        i {
+            font-size: 3rem;
+            line-height: 5.5rem;
         }
     }
     h5 {
@@ -109,5 +134,14 @@ html {
     }
     .Contact {
         float: right;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }

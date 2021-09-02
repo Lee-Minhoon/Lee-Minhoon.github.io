@@ -9,8 +9,8 @@ class App extends Component {
             <div className={styles.Right}>
                 <div className={styles.Contact}>
                     <a href={content.github}><i class="fab fa-github"></i></a>
-                    <a href='mailto:{content.email}'>{content.email}</a>
-                    <a href={content.blog}>{content.blog}</a>
+                    <a href={content.github}><i class="fas fa-blog"></i></a>
+                    <a href={content.github}><i class="fas fa-envelope"></i></a>
                 </div>
             </div >
         );
