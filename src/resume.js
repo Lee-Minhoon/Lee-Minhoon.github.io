@@ -87,7 +87,8 @@ export const resume = {
                     '광학 음악 인식 모듈에 OpenCV 라이브러리를 사용하였으며, 속도를 위해 jni + ndk를 사용함',
                     '클라이언트는 안드로이드 애플리케이션, 서버는 파이썬으로 구현'
                 ],
-                keywords: [icons.C, icons.Cpp, icons.Java, icons.Python, icons.OpenCV, icons.Android]
+                keywords: [icons.C, icons.Cpp, icons.Java, icons.Python, icons.OpenCV, icons.Android],
+                images: ['./projects/1-1.png', './projects/1-2.png', './projects/1-3.png', './projects/1-4.png']
             },
             {
                 title: 'PC 견적 관리 시스템',
@@ -99,7 +100,8 @@ export const resume = {
                     '로그인, 로그아웃, 회원가입, 역경매/입찰, 페이징, 관리자 페이지 등의 기능 제공',
                     'HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현'
                 ],
-                keywords: [icons.HTML, icons.CSS, icons.JavaScript, icons.PHP, icons.MySQL]
+                keywords: [icons.HTML, icons.CSS, icons.JavaScript, icons.PHP, icons.MySQL],
+                images: []
             },
             {
                 title: '플리마켓 통합 관리 시스템',
@@ -107,7 +109,8 @@ export const resume = {
                 link: 'https://github.com/Lee-Minhoon',
                 period: '2019.09 ~ 2019.12',
                 desc: ['~~한 프로젝트', '222'],
-                keywords: []
+                keywords: [],
+                images: []
             },
             {
                 title: 'TAPC(2)',
@@ -115,7 +118,8 @@ export const resume = {
                 link: 'https://github.com/Lee-Minhoon/tap-the-taxi-2',
                 period: '2019.09 ~ 2019.12',
                 desc: ['~~한 프로젝트', '222'],
-                keywords: [icons.Java, icons.JavaScript, icons.Nodejs, icons.MySQL, icons.Android]
+                keywords: [icons.Java, icons.JavaScript, icons.Nodejs, icons.MySQL, icons.Android],
+                images: []
             },
             {
                 title: 'TAPC',
@@ -123,7 +127,8 @@ export const resume = {
                 link: 'https://github.com/Lee-Minhoon/tap-the-taxi-2',
                 period: '2019.03 ~ 2019.06',
                 desc: ['~~한 프로젝트', '222'],
-                keywords: [icons.Java, icons.Firebase, icons.Android]
+                keywords: [icons.Java, icons.Firebase, icons.Android],
+                images: []
             },
             {
                 title: '프로그래밍 포럼',
@@ -131,7 +136,8 @@ export const resume = {
                 link: 'https://github.com/Lee-Minhoon/programming-forum',
                 period: '2018.03 ~ 2018.06',
                 desc: ['~~한 프로젝트', '222'],
-                keywords: [icons.HTML, icons.CSS, icons.JavaScript]
+                keywords: [icons.HTML, icons.CSS, icons.JavaScript],
+                images: []
             },
             {
                 title: '눈걸이',
@@ -139,7 +145,8 @@ export const resume = {
                 link: 'https://github.com/Lee-Minhoon/tap-the-taxi-2',
                 period: '2018.03 ~ 2018.06',
                 desc: ['~~한 프로젝트', '222'],
-                keywords: [icons.C, icons.Arduino]
+                keywords: [icons.C, icons.Arduino],
+                images: []
             },
         ]
     },

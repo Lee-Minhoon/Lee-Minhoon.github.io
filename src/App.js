@@ -3,6 +3,7 @@ import Header from './components/header/Container'
 import Summary from './components/summary/Container'
 import Skills from './components/skills/Container'
 import Common from './components/common/Container'
+import Projects from './components/projects/Container'
 import Footer from './components/Footer'
 import { Component } from 'react';
 
@@ -18,7 +19,7 @@ class App extends Component {
         <Summary contents={this.state.summary}></Summary>
         <Skills contents={this.state.skills} ></Skills>
         <Common contents={this.state.experience}></Common>
-        <Common contents={this.state.projects}></Common>
+        <Projects contents={this.state.projects}></Projects>
         <Common contents={this.state.awards}></Common>
         <Common contents={this.state.research}></Common>
         <Common contents={this.state.education} ></Common>
