@@ -15,8 +15,25 @@ class App extends Component {
     }
 
     render() {
-        const images = this.props.images.map((image, index) => (<img onClick={() => this.imgChange(index)} src={image} alt='keyword'></img>))
+        const images = this.props.images.map((image, index) => {
+            if (this.state.index === index) {
+                return (
+                    <button className={styles.Now} onClick={() => this.imgChange(index)}>
+                        <img src={image} alt='keyword'></img>
+                    </button>
+                )
+            }
+            else {
+                return (
+                    <button onClick={() => this.imgChange(index)}>
+                        <img src={image} alt='keyword'></img>
+                    </button>
+                )
+            }
+        });
         const image = this.props.images[this.state.index];
+        const cnt = this.props.images.length;
+        const arrow_left = '&lt';
 
         return (
             <div className={styles.Modal} onClick={this.props.func}>
@@ -26,18 +43,20 @@ class App extends Component {
                         <i class='fas fa-times' onClick={this.props.func}></i>
                     </header>
                     <div>
-                        <div>
-                            <i class='fas fa-chevron-left' onClick={() => this.imgChange(((this.state.index - 1) + 4) % 4)}></i>
+                        <div className={styles.Arrow}>
+                            <i class='fas fa-chevron-left' onClick={() => this.imgChange((this.state.index + cnt - 1) % cnt)}></i>
                         </div>
-                        <img src={image}></img>
-                        <div>
-                            <i class='fas fa-chevron-right' onClick={() => this.imgChange(((this.state.index - 1) + 4) % 4)}></i>
+                        <div className={styles.View}>
+                            <img src={image}></img>
+                        </div>
+                        <div className={styles.Arrow}>
+                            <i class='fas fa-chevron-right' onClick={() => this.imgChange((this.state.index + 1) % cnt)}></i>
                         </div>
                     </div>
                     <footer>
                         {images}
                     </footer>
-                </section>
+                </section >
             </div >
         );
     }

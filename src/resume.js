@@ -51,32 +51,33 @@ export const resume = {
         subject: 'Experience',
         contents: [
             {
-                title: '제목1', link: 'https://github.com/Lee-Minhoon', period: '2014.07~',
-                desc: ['~~한 프로젝트', '2223'],
+                title: '인턴 근무',
+                subtitle: '서르 근무',
+                link: 'https://github.com/Lee-Minhoon',
+                period: '2020.07 ~ 2020.08',
+                desc: [
+                    '~~한 프로젝트', '2223'
+                ],
                 keywords: [icons.Cpp, icons.Cpp]
-            },
-            {
-                title: '제목1', link: 'https://github.com/Lee-Minhoon', period: '2014.07~',
-                desc: ['~~한 프로젝트', '222'],
-                keywords: [icons.Cpp, icons.Cpp]
-            },
-            {
-                title: '제목1', link: 'https://github.com/Lee-Minhoon', period: '2014.07~',
-                desc: ['~~한 프로젝트', '222'],
-                keywords: [icons.Cpp, icons.Cpp]
-            },
-            {
-                title: '제목1', link: 'https://github.com/Lee-Minhoon', period: '2014.07~',
-                desc: ['~~한 프로젝트', '222'],
-                keywords: [icons.Cpp, icons.Cpp]
-            },
+            }
         ]
     },
     projects: {
         subject: 'Projects',
         contents: [
             {
-                title: '광학음악인식 기반 자동 편곡 시스템',
+                title: '깃허브 이력서',
+                subtitle: '깃허브 페이지를 이용해 ',
+                link: 'https://github.com/Lee-Minhoon/capstone-design',
+                period: '2020.09 ~ ',
+                desc: [
+                    '웹 프론트엔드 프레임워크인 리액트 실습과 더불어 하나쯤은 있으면 좋겠다 싶었던 이력서페이지를 작성하게 됨'
+                ],
+                keywords: [icons.HTML, icons.CSS, icons.JavaScript],
+                images: ['./projects/1-1.png', './projects/1-2.png', './projects/1-3.png', './projects/1-4.png']
+            },
+            {
+                title: '광학 음악 인식 기반 자동 편곡 시스템',
                 subtitle: '캡스톤디자인1, 2 교과목 연계 프로젝트',
                 link: 'https://github.com/Lee-Minhoon/capstone-design',
                 period: '2020.03 ~ 2020.12',
@@ -85,7 +86,10 @@ export const resume = {
                     '사용자는 편곡하고자 하는 음악의 악보를 입력하고 편곡된 음악 파일을 제공 받음',
                     '크게 광학 음악 인식 모듈과 자동 편곡 모듈로 구성',
                     '광학 음악 인식 모듈에 OpenCV 라이브러리를 사용하였으며, 속도를 위해 jni + ndk를 사용함',
-                    '클라이언트는 안드로이드 애플리케이션, 서버는 파이썬으로 구현'
+                    '클라이언트는 안드로이드 애플리케이션, 서버는 파이썬으로 구현',
+                    '악보를 인식하는 과정은 30여 개가 넘는 악보의 구성요소들을 인식하고 분류해야함',
+                    '본 프로젝트를 통해 작게 나마 컴퓨터비전, 머신 러닝 등 인공지능 분야의 학습계기가 됨',
+                    '모르는 분야에 도전하고 '
                 ],
                 keywords: [icons.C, icons.Cpp, icons.Java, icons.Python, icons.OpenCV, icons.Android],
                 images: ['./projects/1-1.png', './projects/1-2.png', './projects/1-3.png', './projects/1-4.png']
@@ -97,7 +101,20 @@ export const resume = {
                 period: '2019.09 ~ 2019.12',
                 desc: [
                     'PC부품에 대한 지식 없이 조립형 PC를 구매할 수 있는 PC견적 및 경매 사이트',
-                    '로그인, 로그아웃, 회원가입, 역경매/입찰, 페이징, 관리자 페이지 등의 기능 제공',
+                    '로그인/로그아웃, 회원가입, 역경매/입찰, 페이징, 관리자 페이지 등의 기능 제공',
+                    'HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현'
+                ],
+                keywords: [icons.HTML, icons.CSS, icons.JavaScript, icons.PHP, icons.MySQL],
+                images: []
+            },
+            {
+                title: '인터넷 도서 구매 시스템',
+                subtitle: '데이터베이스설계 교과목 연계 프로젝트',
+                link: 'https://github.com/Lee-Minhoon/PC-auction',
+                period: '2019.09 ~ 2019.12',
+                desc: [
+                    '데이터베이스 실습을 위해 알라딘, YES24, 리디북스와 같은 온라인 도서 구매 사이트를 구현',
+                    '로그인/로그아웃, 회원가입, 마이페이지(카드, 장바구니, 주문내역, 주문상세), 주문, 리뷰 등의 기능 제공',
                     'HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현'
                 ],
                 keywords: [icons.HTML, icons.CSS, icons.JavaScript, icons.PHP, icons.MySQL],
@@ -108,7 +125,12 @@ export const resume = {
                 subtitle: '소프트웨어분석및설계 교과목 연계 프로젝트',
                 link: 'https://github.com/Lee-Minhoon',
                 period: '2019.09 ~ 2019.12',
-                desc: ['~~한 프로젝트', '222'],
+                desc: [
+                    '해당 프로젝트는 개발 직전 단계까지의 설계를 목표로 두고 다양한 설계문서를 작성 해 본 프로젝트',
+                    '설계 문서는 프로젝트 정의서, 요구사항기술서, 클래스분석서, UI설계서, 데이트베이스설계서 등을 작성',
+                    '플리마켓의 셀러와 주최자, 참가자에게 기존의 불편한 요소들을 해소할 수 있도록 하는 플리마켓 통합 관리 시스템',
+                    '프로젝트 설계방법과 StarUML과 같은 설계툴에 대해 배울수 있었음'
+                ],
                 keywords: [],
                 images: []
             },
@@ -117,7 +139,12 @@ export const resume = {
                 subtitle: '소프트웨어개발실습4 교과목 연계 프로젝트',
                 link: 'https://github.com/Lee-Minhoon/tap-the-taxi-2',
                 period: '2019.09 ~ 2019.12',
-                desc: ['~~한 프로젝트', '222'],
+                desc: [
+                    'Firebase를 대체할 웹 서버를 구현하여 만든 TAPC 후속 프로젝트',
+                    '클라이언트는 안드로이드 애플리케이션, 서버는 Node.js, DB는 MySQL로 구현',
+                    '로그인/로그아웃, 회원가입 등을 위한 http 서버와 매칭/채팅을 위한 소켓 서버를 구현',
+                    '안드로이드 애플리케이션과 웹서버를 처음 연동한 프로젝트'
+                ],
                 keywords: [icons.Java, icons.JavaScript, icons.Nodejs, icons.MySQL, icons.Android],
                 images: []
             },
@@ -126,7 +153,11 @@ export const resume = {
                 subtitle: '소프트웨어개발실습3 교과목 연계 프로젝트',
                 link: 'https://github.com/Lee-Minhoon/tap-the-taxi-2',
                 period: '2019.03 ~ 2019.06',
-                desc: ['~~한 프로젝트', '222'],
+                desc: [
+                    '고지대에 위치한 학교의 지리적 특성에 택시합승관련 어플리케이션을 설계, 개발',
+                    '웹 서버에 대한 지식이 전무해 Google Firebase를 통해 데이터베이스를 구현',
+                    '로그인/로그아웃, 회원가입, 방 생성/참여, 채팅 기능 등이 포함'
+                ],
                 keywords: [icons.Java, icons.Firebase, icons.Android],
                 images: []
             },
@@ -135,7 +166,10 @@ export const resume = {
                 subtitle: '소프트웨어개발실습2 교과목 연계 프로젝트',
                 link: 'https://github.com/Lee-Minhoon/programming-forum',
                 period: '2018.03 ~ 2018.06',
-                desc: ['~~한 프로젝트', '222'],
+                desc: [
+                    '한국에 대형 프로그래밍 커뮤니티가 부족하다 생각하여 만든 사이트',
+                    '서버가 없는 정적 페이지이며 HTML + CSS + JavaScript를 처음으로 실습 해본 프로젝트',
+                ],
                 keywords: [icons.HTML, icons.CSS, icons.JavaScript],
                 images: []
             },
@@ -144,7 +178,10 @@ export const resume = {
                 subtitle: '소프트웨어기초프로젝트 교과목 연계 프로젝트',
                 link: 'https://github.com/Lee-Minhoon/tap-the-taxi-2',
                 period: '2018.03 ~ 2018.06',
-                desc: ['~~한 프로젝트', '222'],
+                desc: [
+                    '시각장애인을 위해 만들어진 장애물과의 거리를 알려주는 목걸이',
+                    '초음파센서와 부저, 진동 모터 등이 사용 됨'
+                ],
                 keywords: [icons.C, icons.Arduino],
                 images: []
             },
@@ -155,6 +192,7 @@ export const resume = {
         contents: [
             {
                 title: '2020년도 온택트기반 동서인 FAIR - 최우수상',
+                subtitle: '광학 음악 인식 기반 자동 편곡 시스템',
                 link: 'https://blog.naver.com/PostView.nhn?blogId=dongseo_aisw&logNo=222199685902&categoryNo=6&parentCategoryNo=1&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView',
                 period: '2020.12.17',
                 desc: ['~~한 프로젝트', '222'],
@@ -162,6 +200,7 @@ export const resume = {
             },
             {
                 title: '한국지능시스템학회 30주년 기념 2020 추계학술대회 - 우수논문상',
+                subtitle: '광학 음악 인식 기반 자동 편곡 시스템',
                 link: 'https://blog.naver.com/PostView.nhn?blogId=dongseo_aisw&logNo=222199685902&categoryNo=6&parentCategoryNo=1&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView',
                 period: '2020.11.28',
                 desc: ['~~한 프로젝트', '222'],
@@ -169,13 +208,15 @@ export const resume = {
             },
             {
                 title: '동서인 AI해커톤 경진대회 - 장려상',
+                subtitle: '컴퓨터 비전을 이용한 악보 인식 기반 자동 편곡 시스템',
                 link: 'https://www.dongseo.ac.kr/kr/?pCode=MN2000192&mode=view&idx=82307',
-                period: '2020.08.08',
+                period: '2020.08.31',
                 desc: ['~~한 프로젝트', '222'],
                 keywords: [icons.Cpp, icons.Cpp]
             },
             {
                 title: '2020년도 동서 AI·SW 아이디어 경진대회 - 장려상',
+                subtitle: '광학 음악 인식을 이용한 자동 편곡 시스템',
                 link: 'https://uni.dongseo.ac.kr/sw/index.php?pCode=MN1000014&pg=2&mode=view&idx=442',
                 period: '2020.06.08',
                 desc: ['~~한 프로젝트', '222'],
@@ -200,29 +241,29 @@ export const resume = {
                 period: '2020.01.18',
                 desc: [
                     '구분 : Journal',
-                    '논문명 : Optical Music Recognition-based Auto Arrangement System'
+                    '흔히 음악을 추상적이고 불확실성이 높은 예술 분야라 생각하지만, 엄연히 화성학과 대위법 등 정립된 이론이 존재한다. 컴퓨터와 인공지능이 등장함에 따라 이런 이론들을 바탕으로 음악을 작곡하거나 편곡하려는 시도가 생겨났고, 현재까지도 많은 연구가 진행되고 있다. 본 논문에서는 악보 이미지를 입력받아 알고리즘을 통해 자동 편곡한 음악 파일을 출력할 수 있도록 하는 악보 인식 기반 자동 편곡 시스템을 제안하였다. 광학 음악 인식을 통해 악보를 컴퓨터가 이해하기 쉬운 데이터 형태로 변환하였고, 멜로디를 기반으로 코드를 생성함으로써 편곡 시스템의 일부분을 구현하였다. 코드를 생성하는 작업에는 실제 악곡의 멜로디와 코드를 기반으로 심층 신경망을 사용하였다. 코드를 생성하는 데에는 다양한 선택지가 있음에도 불구, 실제 악곡과의 비교에서 약 55%의 일치율을 보였다.'
                 ],
                 keywords: [icons.Cpp, icons.Cpp]
             },
             {
                 title: '컴퓨터공학부졸업논문집',
-                subtitle: '광학음악인식 기반 자동 편곡 시스템',
+                subtitle: '광학 음악 인식 기반 자동 편곡 시스템',
                 link: 'https://m.blog.naver.com/computer_ck/221128532267',
                 period: '2020.11.28',
                 desc: [
                     '구분 : Thesis',
-                    '논문명 : 광학음악인식 기반 자동 편곡 시스템'
+                    '4차 산업혁명이 진행되며 인공지능이 다양한 분야에서 활용되고 있다. 음악 분야 또한 인공지능과의 융합에 많은 연구가 진행되고 있다. 한편 사회 전반적으로 음악에 대한 수요는 꾸준히 늘고 있으며, 그중에서도 편곡에 대한 관심이 늘고 있다. 다만 편곡 작업은 진입장벽이 높아, 전공자가 아닌 일반인들이 시도하기에는 어려움이 있다. 이에 따라 본 논문에서는 광학 음악 인식 기반 자동 편곡 시스템을 제안한다. 편곡을 위한 데이터 확보를 위해 광학 음악 인식을 사용하였고 편곡 과정 중, 화성 생성의 경우 멜로디에 기반한 신경망 기법을 사용하였다. 제안한 광학 음악 인식 기법은 복잡도 ‘하’에 해당하는 악보 20장에 대해 95%의 인식률을 보였으며 신경망을 통해 생성된 화성들은 화성학에 근거하여 실제 편곡에 적용할 수 있음을 확인하였다.'
                 ],
                 keywords: [icons.Cpp, icons.Cpp]
             },
             {
                 title: '한국지능시스템학회 30주년 기념 2020 추계학술대회',
-                subtitle: '광학음악인식 기반 자동 편곡 시스템',
+                subtitle: '광학 음악 인식 기반 자동 편곡 시스템',
                 link: 'https://m.blog.naver.com/computer_ck/221128532267',
                 period: '2020.11.28',
                 desc: [
                     '구분 : Conference',
-                    '논문명 : 광학음악인식 기반 자동 편곡 시스템'
+                    '인공지능에 대한 관심과 활용이 증가함에 따라 4차 산업혁명의 주요 기술로 각광받고 있다. 음악분야에서도 인공지능과의 융합에 많은 연구가 활발히 진행되고 있다. 본 논문에서는 광학음악인식 기반 자동 편곡 시스템을 제안한다. 편곡에는 템포 조절, 조옮김, 화성 생성과 같은 다양한 과정이 포함된다. 편곡을 위한 데이터 확보를 위해 광학 음악 인식을 사용하였고 멜로디에 어울리는 화성을 생성하기 위해 신경망 기법을 사용하였다. 생성된 화성들은 화성학에 근거하여 실제 편곡에 적용시킬 수 있음을 확인하였다.'
                 ],
                 keywords: [icons.Cpp, icons.Cpp]
             },
@@ -232,7 +273,7 @@ export const resume = {
                 link: 'https://m.blog.naver.com/computer_ck/221128532267',
                 period: '2020.11.10',
                 desc: [
-                    '특허명 : 악보 인식 기반 편곡 장치 및 악보 인식 기반 편곡 방법'
+                    '본 발명은 악보 인식 기반 편곡 장치 및 방법에 관한 것으로, 더 상세하게는 광학 인식 알고리즘을 이용하여 악보로부터 데이터를 추출하고, 추출된 데이터를 편집함으로써 사용자가 쉽게 악보를 편곡하도록 제공하며, 편곡된 음악을 파일로 제공받도록 하는 악보 인식 기반 편곡 장치 및 방법에 관한 것이다.'
                 ],
                 keywords: [icons.Cpp, icons.Cpp]
             },
@@ -243,7 +284,7 @@ export const resume = {
                 period: '2020.08.31',
                 desc: [
                     '구분 : SCOPUS',
-                    '논문명 : Computer-Vision-based Advanced Optical Music Recognition System'
+                    'Computer vision is an artificial intelligence technology that studies techniques for extracting information from images. Several studies have been performed to identify and edit music scores using computer vision. This study proposes a system to identify musical notes and print arranged music. Music is produced by general rules; consequently, the components of music have specific patterns. There are four approaches in pattern recognition that can be used classify images using patterns. Our proposed method of identifying music sheets is as follows. Several pretreatment processes (image binary, noise and staff elimination, image resizing) are performed to aid the identification. The components of the music sheet are identified by statistical pattern recognition. Applying an artificial intelligence model (Markov chain) to extracted music data aids in arranging the data. From applying the pattern recognition technique, a recognition rate of 100% was shown for music sheets of low complexity. The components included in the recognition rate are signs, notes, and beats. However, there was a low recognition rate for some music sheet and can be addressed by adding a classification to the navigation process. To increase the recognition rate of the music sheet with intermediate complexity, it is necessary to refine the pre-processing process and pattern recognition algorithm. We will also apply neural network-based models to the arrangement process.'
                 ],
                 keywords: [icons.Cpp, icons.Cpp]
             },
@@ -254,7 +295,7 @@ export const resume = {
                 period: '2020.07.09',
                 desc: [
                     '구분 : Conference',
-                    '논문명 : Advanced Optical Music Recognition System for Automatic Arrangement'
+                    'In general, the demand for music is increasing among them; the demand and interest for remake songs are increasing. However, the skill related to the arrangement is difficult to learn, and its quantity has been recognized only as an expert area. On the other hand, AI (artificial intelligence) is active in many fields, among which music-related AI is also in the spotlight. In this paper, we proposed the contents of the development of a system that makes it easy for the general public who is not a music major to arrange music using computer vision and machine learning technology easily. Initially, a template matching algorithm was applied to score recognition. However, there was a problem with a low recognition rate. In order to solve the problem, we proposed advanced optical music recognition with high versatility.'
                 ],
                 keywords: [icons.Cpp, icons.Cpp]
             }
