@@ -67,7 +67,7 @@ export const resume = {
         contents: [
             {
                 title: '깃허브 이력서',
-                subtitle: '깃허브 페이지를 이용해 ',
+                subtitle: '리액트를 이용해 만들고 깃허브 페이지를 이용해 배포한 이력서',
                 link: 'https://github.com/Lee-Minhoon/capstone-design',
                 period: '2020.09 ~ ',
                 desc: [
