@@ -196,7 +196,7 @@ html {
     background-color: rgba(0, 0, 0, 0.6);
     line-height: normal;
     section {
-        position: absolute;
+        position: relative;
         top: 50%;
         left: 50%;
         width: 75%;
@@ -206,7 +206,7 @@ html {
         color: white;
         transform: translate(-50%, -50%);
         header {
-            position: relative;
+            position: inherit;
             height: 7%;
             padding: 1%;
             @include font(white, normal, 300, 2rem);
@@ -225,33 +225,28 @@ html {
             }
         }
         div {
+            position: inherit;
             height: 83%;
-            .Arrow {
-                position: relative;
-                float: left;
-                width: 5%;
-                height: 100%;
-                i {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    font-size: 40px;
-                    transition: 0.3s;
-                    transform: translate(-50%, -50%);
-                    &:hover {
-                        color: #B2CCFF;
-                        cursor: pointer;
-                        transform: translate(-50%, -50%) scale(1.2);
-                    }
+            svg {
+                z-index: 5;
+                position: absolute;
+                top: 50%;
+                transform: translate(0%, -50%);
+                fill: none;
+                stroke: currentColor;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                width: 70px;
+                transition: 0.3s;
+                &:hover {
+                    color: #B2CCFF;
+                    cursor: pointer;
+                    transform: translate(0%, -50%) scale(1.2);
                 }
             }
-            .View {
-                float: left;
-                width: 90%;
+            img {
                 height: 100%;
-                img {
-                    height: 100%;
-                }
+                -webkit-user-select: none;
             }
         }
         footer {

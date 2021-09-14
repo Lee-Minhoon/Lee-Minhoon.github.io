@@ -19,21 +19,20 @@ class App extends Component {
             if (this.state.index === index) {
                 return (
                     <button className={styles.Now} onClick={() => this.imgChange(index)}>
-                        <img src={image} alt='keyword'></img>
+                        <img src={`${this.props.folder}/${image}.png`} alt='keyword'></img>
                     </button>
                 )
             }
             else {
                 return (
                     <button onClick={() => this.imgChange(index)}>
-                        <img src={image} alt='keyword'></img>
+                        <img src={`${this.props.folder}/${image}.png`} alt='keyword'></img>
                     </button>
                 )
             }
         });
         const image = this.props.images[this.state.index];
         const cnt = this.props.images.length;
-        const arrow_left = '&lt';
 
         return (
             <div className={styles.Modal} onClick={this.props.func}>
@@ -43,15 +42,13 @@ class App extends Component {
                         <i class='fas fa-times' onClick={this.props.func}></i>
                     </header>
                     <div>
-                        <div className={styles.Arrow}>
-                            <i class='fas fa-chevron-left' onClick={() => this.imgChange((this.state.index + cnt - 1) % cnt)}></i>
-                        </div>
-                        <div className={styles.View}>
-                            <img src={image}></img>
-                        </div>
-                        <div className={styles.Arrow}>
-                            <i class='fas fa-chevron-right' onClick={() => this.imgChange((this.state.index + 1) % cnt)}></i>
-                        </div>
+                        <svg style={{ left: '1%' }} viewBox="0 0 12 18" onClick={() => this.imgChange((this.state.index + cnt - 1) % cnt)}>
+                            <polyline points="9 3 3 9 9 15"></polyline>
+                        </svg>
+                        <img src={`${this.props.folder}/${image}.png`}></img>
+                        <svg style={{ right: '1%' }} viewBox="0 0 12 18" onClick={() => this.imgChange((this.state.index + 1) % cnt)}>
+                            <polyline points="3 3 9 9 3 15"></polyline>
+                        </svg>
                     </div>
                     <footer>
                         {images}

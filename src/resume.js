@@ -74,6 +74,7 @@ export const resume = {
                     '웹 프론트엔드 프레임워크인 리액트 실습과 더불어 하나쯤은 있으면 좋겠다 싶었던 이력서페이지를 작성하게 됨'
                 ],
                 keywords: [icons.HTML, icons.CSS, icons.JavaScript],
+                folder: './projects/OMR-based-automatic-arrangement-system',
                 images: ['./projects/1-1.png', './projects/1-2.png', './projects/1-3.png', './projects/1-4.png']
             },
             {
@@ -92,7 +93,8 @@ export const resume = {
                     '모르는 분야에 도전하고 '
                 ],
                 keywords: [icons.C, icons.Cpp, icons.Java, icons.Python, icons.OpenCV, icons.Android],
-                images: ['./projects/1-1.png', './projects/1-2.png', './projects/1-3.png', './projects/1-4.png']
+                folder: './projects/OMR-based-automatic-arrangement-system',
+                images: [1, 2, 3]
             },
             {
                 title: 'PC 견적 관리 시스템',
@@ -105,7 +107,8 @@ export const resume = {
                     'HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현'
                 ],
                 keywords: [icons.HTML, icons.CSS, icons.JavaScript, icons.PHP, icons.MySQL],
-                images: []
+                folder: './projects/PC-auction',
+                images: [1, 2, 3, 4, 5, 6]
             },
             {
                 title: '인터넷 도서 구매 시스템',
@@ -118,6 +121,7 @@ export const resume = {
                     'HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현'
                 ],
                 keywords: [icons.HTML, icons.CSS, icons.JavaScript, icons.PHP, icons.MySQL],
+                folder: './projects/OMR-based-automatic-arrangement-system',
                 images: []
             },
             {
@@ -132,6 +136,7 @@ export const resume = {
                     '프로젝트 설계방법과 StarUML과 같은 설계툴에 대해 배울수 있었음'
                 ],
                 keywords: [],
+                folder: './projects/OMR-based-automatic-arrangement-system',
                 images: []
             },
             {
@@ -146,6 +151,7 @@ export const resume = {
                     '안드로이드 애플리케이션과 웹서버를 처음 연동한 프로젝트'
                 ],
                 keywords: [icons.Java, icons.JavaScript, icons.Nodejs, icons.MySQL, icons.Android],
+                folder: './projects/OMR-based-automatic-arrangement-system',
                 images: []
             },
             {
@@ -159,6 +165,7 @@ export const resume = {
                     '로그인/로그아웃, 회원가입, 방 생성/참여, 채팅 기능 등이 포함'
                 ],
                 keywords: [icons.Java, icons.Firebase, icons.Android],
+                folder: './projects/OMR-based-automatic-arrangement-system',
                 images: []
             },
             {
@@ -171,6 +178,7 @@ export const resume = {
                     '서버가 없는 정적 페이지이며 HTML + CSS + JavaScript를 처음으로 실습 해본 프로젝트',
                 ],
                 keywords: [icons.HTML, icons.CSS, icons.JavaScript],
+                folder: './projects/OMR-based-automatic-arrangement-system',
                 images: []
             },
             {
@@ -183,6 +191,7 @@ export const resume = {
                     '초음파센서와 부저, 진동 모터 등이 사용 됨'
                 ],
                 keywords: [icons.C, icons.Arduino],
+                folder: './projects/OMR-based-automatic-arrangement-system',
                 images: []
             },
         ]
