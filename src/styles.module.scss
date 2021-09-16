@@ -1,24 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import './mixin.module.scss';
 
 /*
 content
 
+속성
 display
 position
 box-sizing
 overflow
 word-break
 
+배치
 z-index
 float
 top right bottom left
 
+외형
 width height
 border
 background-color
 margin padding
 
+컨텐츠
 justify-content: center;
 align-items: center;
 line-height
@@ -26,44 +31,22 @@ text~ decoration align
 color
 font~ display family style size weight
 
+이미지
+user-select
+
+애니메이션
+transition
+cursor
 box shadow
 transform
-cursor
-transition
+animation
+
+SVG
+fill
+stroke
+stroke-linecap
+stroke-linejoin
 */
-
-@mixin font($color, $style, $weight, $size) {
-    color: $color;
-    font: {
-        display: swap;
-        family: 'Roboto', 'Noto Sans KR', sans-serif;
-        style: $style;
-        weight: $weight;
-        size: $size;
-    }
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0px;
-    text-decoration: none;
-}
-
-html {
-    width: 1200px;
-    margin: 60px auto;
-    line-height: 2;
-    font-size: 10px;
-}
 
 .Container {
     h1 {
@@ -83,7 +66,7 @@ html {
     }
     .Wrapper {
         overflow: hidden;
-        word-break: break-all; 
+        word-break: break-all;
         h4 {
             line-height: 1.2;
             @include font(black, normal, 500, 2rem);
@@ -91,67 +74,20 @@ html {
         margin-bottom: 2rem;
         .Left {
             float: left;
-            width: 30%;
-            height: 100%;
+            @include size(30%, 100%);
             padding-right: 5%;
             a {
+                text-decoration: none;
                 @include font(gray, italic, 300, 1.5rem);
+                transition: 0.3s;
                 &:hover {
                     color: black;
                 }
             }
-            img {
-                display: block;
-                width: 250px;
-                height: 250px;
-                border-radius: 50%;
-            }
         }
         .Right {
             float: left;
-            width: 70%;
-            height: 100%;
-            a {
-                display: inline-block;
-                position: relative;
-                width: 5.5rem;
-                height: 5.5rem;
-                margin-left: 1rem;
-                text-align: center;
-                color: #fff;
-                transition: color 0.3s;
-                &::before {
-                    content: '';
-                    position: absolute;
-                    box-sizing: inherit;
-                    z-index: -1;
-                    top: 0;
-                    left: 0;
-                    width: inherit;
-                    height: inherit;
-                    border-radius: 50%;
-                    box-shadow: inset 0 0 0 30px #333;
-                    transition: box-shadow 0.3s;
-                }
-                &:hover {
-                    color: #333;
-                    &::before {
-                        border: solid 2px white;
-                        border-top: solid 2px #333;
-                        box-shadow: inset 0 0 0 2px #333;
-                        animation: {
-                            name: spin;
-                            duration: 1s;
-                            iteration-count: infinite;
-                            timing-function: linear;
-                        }
-                    }
-                }
-                i {
-                    line-height: 5.5rem;
-                    font-size: 3rem;
-                }
-            }
+            @include size(70%, 100%);
             h5 {
                 @include font(gray, italic, 300, 1.5rem);
             }
@@ -163,117 +99,18 @@ html {
                 @include font(black, normal, 300, 1.5rem);
             }
             .Keyword {
-                margin-top: 0.5rem;
-                margin-right: 0.5rem;
+                margin: 0.5rem 0.5rem 0 0;
             }
             .Image {
-                width: 12rem;
-                height: 8rem;
-                margin-top: 0.5rem;
-                margin-right: 1.5rem;
+                @include size(12rem, 8rem);
+                margin: 0.5rem 1.5rem 0 0;
                 box-shadow: 0 1px 3px 0 gray;
-                transition: transform 0.3s;
-                &:hover {
-                    box-shadow: 0 1px 3px 1px gray;
-                    cursor: pointer;
-                    transform: scale(1.05);
-                }
-            }
-            .Contact {
-                float: right;
-            }
-        }
-    }
-}
-
-.Modal {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 99;
-    background-color: rgba(0, 0, 0, 0.6);
-    line-height: normal;
-    section {
-        position: relative;
-        top: 50%;
-        left: 50%;
-        width: 75%;
-        height: 95%;
-        background-color: #333;
-        text-align: center;
-        color: white;
-        transform: translate(-50%, -50%);
-        header {
-            position: inherit;
-            height: 7%;
-            padding: 1%;
-            @include font(white, normal, 300, 2rem);
-            i {
-                position: absolute;
-                top: 50%;
-                right: 1%;
-                font-size: 40px;
-                transition: 0.3s;
-                transform: translate(0%, -50%);
-                &:hover {
-                    color: #B2CCFF;
-                    cursor: pointer;
-                    transform: translate(0%, -50%) scale(1.2);
-                }
-            }
-        }
-        div {
-            position: inherit;
-            height: 83%;
-            svg {
-                z-index: 5;
-                position: absolute;
-                top: 50%;
-                transform: translate(0%, -50%);
-                fill: none;
-                stroke: currentColor;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                width: 70px;
                 transition: 0.3s;
                 &:hover {
-                    color: #B2CCFF;
                     cursor: pointer;
-                    transform: translate(0%, -50%) scale(1.2);
-                }
-            }
-            img {
-                height: 100%;
-                -webkit-user-select: none;
-            }
-        }
-        footer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 10%;
-            button {
-                width: 9rem;
-                height: 6rem;
-                padding: 0;
-                margin-right: 1.5rem;
-                transition: transform 0.3s;
-                &:hover {
-                    box-shadow: 0 1px 3px 0 gray;
-                    cursor: pointer;
+                    box-shadow: 0 2px 5px 2px gray;
                     transform: scale(1.05);
                 }
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-            .Now {
-                border: 3px solid #B2CCFF;
-                border-radius: 5%;
-                transform: scale(1.05);
             }
         }
     }

@@ -1,0 +1,28 @@
+@mixin center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin location($top, $right, $bottom, $left) {
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin font($color, $style, $weight, $size) {
+    color: $color;
+    font: {
+        display: swap;
+        family: 'Roboto', 'Noto Sans KR', sans-serif;
+        style: $style;
+        weight: $weight;
+        size: $size;
+    }
+}

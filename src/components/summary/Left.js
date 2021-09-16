@@ -1,4 +1,5 @@
 import styles from '../../styles.module.scss';
+import summary from './summary.module.scss';
 import { Component } from 'react';
 
 class App extends Component {
@@ -7,7 +8,7 @@ class App extends Component {
 
         return (
             <div className={styles.Left}>
-                <img src={content.profile} alt='profile'></img>
+                <img className={summary.Profile} src={content.profile} alt='profile'></img>
             </div>
         );
     }

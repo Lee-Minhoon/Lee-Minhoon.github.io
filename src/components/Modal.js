@@ -1,4 +1,5 @@
 import styles from '../styles.module.scss';
+import modal from './modal.module.scss';
 import { Component } from 'react';
 
 class App extends Component {
@@ -8,53 +9,49 @@ class App extends Component {
             index: this.props.index
         };
     }
-    imgChange = (index) => {
+    imageChange = (index) => {
         this.setState({
             index: index
         });
     }
 
     render() {
-        const images = this.props.images.map((image, index) => {
+        const thumbnails = this.props.images.map((image, index) => {
             if (this.state.index === index) {
-                return (
-                    <button className={styles.Now} onClick={() => this.imgChange(index)}>
-                        <img src={`${this.props.folder}/${image}.png`} alt='keyword'></img>
-                    </button>
-                )
+                var currentThumbnail = modal.current;
             }
-            else {
-                return (
-                    <button onClick={() => this.imgChange(index)}>
-                        <img src={`${this.props.folder}/${image}.png`} alt='keyword'></img>
-                    </button>
-                )
-            }
+            return (
+                <button className={currentThumbnail} onClick={() => this.imageChange(index)}>
+                    <img src={`${this.props.folder}/${image}.png`} alt='keyword'></img>
+                </button>
+            )
         });
-        const image = this.props.images[this.state.index];
-        const cnt = this.props.images.length;
+        const currentImage = this.props.images[this.state.index];
+        const length = this.props.images.length;
 
         return (
-            <div className={styles.Modal} onClick={this.props.func}>
+            <div className={modal.Modal} onClick={() => this.props.close(null)}>
                 <section onClick={(e) => e.stopPropagation()}>
                     <header>
-                        {this.props.title}
-                        <i class='fas fa-times' onClick={this.props.func}></i>
+                        <div>{this.props.title}</div>
+                        <svg viewBox="0 0 12 12" onClick={() => this.props.close(null)}>
+                            <polyline points="3 3 6 6 9 3 6 6 9 9 6 6 3 9 6 6"></polyline>
+                        </svg>
                     </header>
                     <div>
-                        <svg style={{ left: '1%' }} viewBox="0 0 12 18" onClick={() => this.imgChange((this.state.index + cnt - 1) % cnt)}>
+                        <svg style={{ left: '1%' }} viewBox="0 0 12 18" onClick={() => this.imageChange((this.state.index + length - 1) % length)}>
                             <polyline points="9 3 3 9 9 15"></polyline>
                         </svg>
-                        <img src={`${this.props.folder}/${image}.png`}></img>
-                        <svg style={{ right: '1%' }} viewBox="0 0 12 18" onClick={() => this.imgChange((this.state.index + 1) % cnt)}>
+                        <img src={`${this.props.folder}/${currentImage}.png`}></img>
+                        <svg style={{ right: '1%' }} viewBox="0 0 12 18" onClick={() => this.imageChange((this.state.index + 1) % length)}>
                             <polyline points="3 3 9 9 3 15"></polyline>
                         </svg>
                     </div>
                     <footer>
-                        {images}
+                        {thumbnails}
                     </footer>
                 </section >
-            </div >
+            </ div >
         );
     }
 }
