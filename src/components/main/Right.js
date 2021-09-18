@@ -21,7 +21,7 @@ class App extends Component {
         const content = this.props.content;
         const desc = content.desc.map((desc) => (<li>{desc}</li>))
         const keywords = content.keywords.map((keyword) => (<img className={styles.Keyword} src={keyword} alt='keyword'></img>))
-        const images = content.images.map((image, index) => (<img className={styles.Image} onClick={() => this.controlModal(index)} src={`${content.folder}/${image}.png`} alt='keyword'></img>))
+        const images = content.images.map((image, index) => (<span className={styles.box}><img className={styles.Image} onClick={() => this.controlModal(index)} src={`${content.folder}/${image}.png`} alt='keyword'></img></span>))
 
         return (
             <div className={styles.Right}>

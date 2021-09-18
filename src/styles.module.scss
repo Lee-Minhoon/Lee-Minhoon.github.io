@@ -101,7 +101,8 @@ stroke-linejoin
             .Keyword {
                 margin: 0.5rem 0.5rem 0 0;
             }
-            .Image {
+            .box {
+                display: inline-block;
                 @include size(12rem, 8rem);
                 margin: 0.5rem 1.5rem 0 0;
                 box-shadow: 0 1px 3px 0 gray;
@@ -110,6 +111,9 @@ stroke-linejoin
                     cursor: pointer;
                     box-shadow: 0 2px 5px 2px gray;
                     transform: scale(1.05);
+                }
+                .Image {
+                    @include size(100%, 100%);
                 }
             }
         }

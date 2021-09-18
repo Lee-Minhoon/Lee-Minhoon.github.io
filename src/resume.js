@@ -1,6 +1,6 @@
 import { icons } from "./icons";
 
-export const headerContent = {
+export const header = {
   name: "이민훈",
   desc: "프로그래머 지망생",
   email: "hackids@naver.com",
@@ -8,7 +8,7 @@ export const headerContent = {
   blog: "https://hackids.tistory.com/",
 };
 
-export const summaryContent = {
+export const intro = {
   subject: "Summary",
   profile: "profile.jpg",
   intro: `
@@ -20,7 +20,8 @@ export const summaryContent = {
         하고 있습니다. \n프로그래머라는
         `,
 };
-export const skillsContent = {
+
+export const skills = {
   subject: "Skills",
   contents: [
     { category: "Frontend", techs: ["Java", "C++"] },
@@ -28,8 +29,6 @@ export const skillsContent = {
     { category: "DevOps", techs: ["Java", "C++"] },
   ],
 };
-
-export const footer = "Createad by React";
 
 export const experience = {
   subject: "Experience",
@@ -46,6 +45,7 @@ export const experience = {
     },
   ],
 };
+
 export const projects = {
   subject: "Projects",
   contents: [
@@ -60,8 +60,8 @@ export const projects = {
       keywords: [icons.HTML, icons.CSS, icons.JavaScript],
       folder: "./projects/OMR-based-automatic-arrangement-system",
       images: [
-        "./projects/1-1.png",
-        "./projects/1-2.png",
+        5,
+        5,
         "./projects/1-3.png",
         "./projects/1-4.png",
       ],
@@ -81,16 +81,9 @@ export const projects = {
         "본 프로젝트를 통해 작게 나마 컴퓨터비전, 머신 러닝 등 인공지능 분야의 학습계기가 됨",
         "모르는 분야에 도전하고 ",
       ],
-      keywords: [
-        icons.C,
-        icons.Cpp,
-        icons.Java,
-        icons.Python,
-        icons.OpenCV,
-        icons.Android,
-      ],
+      keywords: [icons.C, icons.Cpp, icons.Java, icons.Python, icons.OpenCV, icons.Android],
       folder: "./projects/OMR-based-automatic-arrangement-system",
-      images: [1, 2, 3],
+      images: [1, 2, 3, 4],
     },
     {
       title: "PC 견적 관리 시스템",
@@ -102,13 +95,7 @@ export const projects = {
         "로그인/로그아웃, 회원가입, 역경매/입찰, 페이징, 관리자 페이지 등의 기능 제공",
         "HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현",
       ],
-      keywords: [
-        icons.HTML,
-        icons.CSS,
-        icons.JavaScript,
-        icons.PHP,
-        icons.MySQL,
-      ],
+      keywords: [icons.HTML, icons.CSS, icons.JavaScript, icons.PHP, icons.MySQL],
       folder: "./projects/PC-auction",
       images: [1, 2, 3, 4, 5, 6],
     },
@@ -122,15 +109,9 @@ export const projects = {
         "로그인/로그아웃, 회원가입, 마이페이지(카드, 장바구니, 주문내역, 주문상세), 주문, 리뷰 등의 기능 제공",
         "HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현",
       ],
-      keywords: [
-        icons.HTML,
-        icons.CSS,
-        icons.JavaScript,
-        icons.PHP,
-        icons.MySQL,
-      ],
-      folder: "./projects/OMR-based-automatic-arrangement-system",
-      images: [],
+      keywords: [icons.HTML, icons.CSS, icons.JavaScript, icons.PHP, icons.MySQL],
+      folder: "./projects/database-practice",
+      images: [1, 2, 3, 4, 5, 6],
     },
     {
       title: "플리마켓 통합 관리 시스템",
@@ -158,15 +139,9 @@ export const projects = {
         "로그인/로그아웃, 회원가입 등을 위한 http 서버와 매칭/채팅을 위한 소켓 서버를 구현",
         "안드로이드 애플리케이션과 웹서버를 처음 연동한 프로젝트",
       ],
-      keywords: [
-        icons.Java,
-        icons.JavaScript,
-        icons.Nodejs,
-        icons.MySQL,
-        icons.Android,
-      ],
-      folder: "./projects/OMR-based-automatic-arrangement-system",
-      images: [],
+      keywords: [icons.Java, icons.JavaScript, icons.Nodejs, icons.MySQL, icons.Android],
+      folder: "./projects/tap-the-taxi-2",
+      images: [1, 2, 3, 4],
     },
     {
       title: "TAPC",
@@ -179,8 +154,8 @@ export const projects = {
         "로그인/로그아웃, 회원가입, 방 생성/참여, 채팅 기능 등이 포함",
       ],
       keywords: [icons.Java, icons.Firebase, icons.Android],
-      folder: "./projects/OMR-based-automatic-arrangement-system",
-      images: [],
+      folder: "./projects/tap-the-taxi-1",
+      images: [1, 2, 3, 4, 5],
     },
     {
       title: "프로그래밍 포럼",
@@ -192,8 +167,8 @@ export const projects = {
         "서버가 없는 정적 페이지이며 HTML + CSS + JavaScript를 처음으로 실습 해본 프로젝트",
       ],
       keywords: [icons.HTML, icons.CSS, icons.JavaScript],
-      folder: "./projects/OMR-based-automatic-arrangement-system",
-      images: [],
+      folder: "./projects/programming-forum",
+      images: [1, 2, 3, 4, 5],
     },
     {
       title: "눈걸이",
@@ -205,11 +180,12 @@ export const projects = {
         "초음파센서와 부저, 진동 모터 등이 사용 됨",
       ],
       keywords: [icons.C, icons.Arduino],
-      folder: "./projects/OMR-based-automatic-arrangement-system",
-      images: [],
+      folder: "./projects/eyelace",
+      images: [1, 2],
     },
   ],
 };
+
 export const awards = {
   subject: "Awards",
   contents: [
@@ -265,6 +241,7 @@ export const awards = {
     },
   ],
 };
+
 export const research = {
   subject: "Research",
   contents: [
@@ -350,6 +327,7 @@ export const research = {
     },
   ],
 };
+
 export const education = {
   subject: "Education",
   contents: [
@@ -375,6 +353,7 @@ export const education = {
     },
   ],
 };
+
 export const certificate = {
   subject: "Certificate",
   contents: [
@@ -411,4 +390,6 @@ export const certificate = {
   ],
 };
 
-export const mainContents = [experience, projects, awards, research, education, certificate]
+export const footer = "Createad by React";
+
+export const main = [experience, projects, awards, research, education, certificate]
