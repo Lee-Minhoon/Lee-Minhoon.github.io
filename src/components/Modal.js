@@ -15,13 +15,18 @@ class App extends Component {
         });
     }
 
+    componentWillUnmount() {
+        // 이부분에서 강제로 저 엑스창을 잡고있다가 풀어주면됨 혹시아니면 
+        console.log("unmound modal")
+    }
+
     render() {
         const thumbnails = this.props.images.map((image, index) => {
             if (this.state.index === index) {
                 var currentThumbnail = modal.current;
             }
             return (
-                <button className={currentThumbnail} onClick={() => this.imageChange(index)}>
+                <button className={currentThumbnail} onClick={() => this.imageChange(index)} styles={{ background: "black" }}>
                     <img src={`${this.props.folder}/${image}.png`} alt='keyword'></img>
                 </button>
             )
@@ -36,6 +41,7 @@ class App extends Component {
                         <div>{this.props.title}</div>
                         <svg viewBox="0 0 12 12" onClick={() => this.props.close(null)}>
                             <polyline points="3 3 6 6 9 3 6 6 9 9 6 6 3 9 6 6"></polyline>
+                            <p>test</p>
                         </svg>
                     </header>
                     <div>

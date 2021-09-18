@@ -9,9 +9,9 @@ class App extends Component {
         return (
             <div className={styles.Right}>
                 <div className={header.contact}>
-                    <a href={content.github}><i class="fab fa-github"></i></a>
-                    <a href={content.github}><i class="fas fa-blog"></i></a>
-                    <a href={content.github}><i class="fas fa-envelope"></i></a>
+                    <a href={content.github}><i className="fab fa-github" /></a>
+                    <a href={content.github}><i className="fas fa-blog" /></a>
+                    <a href={content.github}><i className="fas fa-envelope" /></a>
                 </div>
             </div >
         );

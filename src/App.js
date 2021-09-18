@@ -19,8 +19,8 @@ class App extends Component {
         <Header contents={headerContent} />
         <Summary contents={summaryContent} />
         <Skills contents={skillsContent} />
-        {mainContents.map((content) => (
-          <Main contents={content} />
+        {mainContents.map((content, i) => (
+          <Main key={`${i}_content`} contents={content} />
         ))}
         <Footer footer={footer} />
       </div>
