@@ -1,8 +1,8 @@
+import { Component } from 'react';
 import styles from '../../styles.module.scss';
 import summary from './summary.module.scss';
-import { Component } from 'react';
 
-class App extends Component {
+class Left extends Component {
     render() {
         const content = this.props.content;
 
@@ -14,4 +14,4 @@ class App extends Component {
     }
 }
 
-export default App
+export default Left;

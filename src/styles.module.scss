@@ -48,72 +48,76 @@ stroke-linecap
 stroke-linejoin
 */
 
-.Container {
-    h1 {
-        line-height: 1.2;
-        @include font(black, normal, 400, 4rem);
-    }
-    h2 {
-        @include font(gray, normal, 300, 2rem);
-    }
-    .Subject {
-        h3 {
-            border-bottom: 1px solid #CCCCCC;
-            margin-bottom: 2rem;
-            text-align: center;
-            @include font(black, normal, 300, 3rem);
-        }
-    }
-    .Wrapper {
-        overflow: hidden;
-        word-break: break-all;
-        h4 {
+.Resume {
+    margin: 60px 0 60px 0;
+    line-height: 2;
+    .Container {
+        h1 {
             line-height: 1.2;
-            @include font(black, normal, 500, 2rem);
+            @include font(black, normal, 400, 4rem);
         }
-        margin-bottom: 2rem;
-        .Left {
-            float: left;
-            @include size(30%, 100%);
-            padding-right: 5%;
-            a {
-                text-decoration: none;
-                @include font(gray, italic, 300, 1.5rem);
-                transition: 0.3s;
-                &:hover {
-                    color: black;
-                }
+        h2 {
+            @include font(gray, normal, 300, 2rem);
+        }
+        .Subject {
+            h3 {
+                border-bottom: 1px solid #CCCCCC;
+                margin-bottom: 2rem;
+                text-align: center;
+                @include font(black, normal, 300, 3rem);
             }
         }
-        .Right {
-            float: left;
-            @include size(70%, 100%);
-            h5 {
-                @include font(gray, italic, 300, 1.5rem);
+        .Wrapper {
+            overflow: hidden;
+            word-break: break-all;
+            h4 {
+                line-height: 1.2;
+                @include font(black, normal, 500, 2rem);
             }
-            li {
-                padding-left: 1.5rem;
-                @include font(black, normal, 300, 1.5rem);
-            }
-            p {
-                @include font(black, normal, 300, 1.5rem);
-            }
-            .Keyword {
-                margin: 0.5rem 0.5rem 0 0;
-            }
-            .box {
-                display: inline-block;
-                @include size(12rem, 8rem);
-                margin: 0.5rem 1.5rem 0 0;
-                box-shadow: 0 1px 3px 0 gray;
-                transition: 0.3s;
-                &:hover {
-                    cursor: pointer;
-                    box-shadow: 0 2px 5px 2px gray;
-                    transform: scale(1.05);
+            margin-bottom: 2rem;
+            .Left {
+                float: left;
+                @include size(30%, 100%);
+                padding-right: 5%;
+                a {
+                    text-decoration: none;
+                    @include font(gray, italic, 300, 1.5rem);
+                    transition: 0.3s;
+                    &:hover {
+                        color: black;
+                    }
                 }
-                .Image {
-                    @include size(100%, 100%);
+            }
+            .Right {
+                float: left;
+                @include size(70%, 100%);
+                h5 {
+                    @include font(gray, italic, 300, 1.5rem);
+                }
+                li {
+                    padding-left: 1.5rem;
+                    @include font(black, normal, 300, 1.5rem);
+                }
+                p {
+                    @include font(black, normal, 300, 1.5rem);
+                }
+                .Keyword {
+                    margin: 0.5rem 0.5rem 0 0;
+                }
+                .box {
+                    display: inline-block;
+                    @include size(12rem, 8rem);
+                    margin: 0.5rem 1.5rem 0 0;
+                    box-shadow: 0 1px 3px 0 gray;
+                    transition: 0.3s;
+                    &:hover {
+                        cursor: pointer;
+                        box-shadow: 0 2px 5px 2px gray;
+                        transform: scale(1.05);
+                    }
+                    .Image {
+                        @include size(100%, 100%);
+                    }
                 }
             }
         }

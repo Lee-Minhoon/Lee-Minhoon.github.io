@@ -12,13 +12,13 @@ export const intro = {
   subject: "Summary",
   profile: "profile.jpg",
   intro: `
-        안녕하세요! 개발자 지망생 이민훈입니다. 뭔가를 만드는 것, 문제를 해결하는 것을
-        좋아하다 보니 어릴 때 부터 자연스레 개발자를 꿈꾸게 되었습니다. 그 꿈이 변치않아
-        현재도 개발자로 일하기위해 다양한 준비들을 하고 있습니다. 대학 생활 중 안드로이드
-        어플리케이션 개발, 웹 개발 등의 여러 프로젝트에 프론트엔드와 백엔드 가리지 않고
-        열심히 참여하였으며, 졸업후에는 알고리즘 공부, 자격증 취득, 안해봤던 기술 공부 등을
-        하고 있습니다. \n프로그래머라는
-        `,
+  안녕하세요! 개발자 지망생 이민훈입니다. 뭔가를 만드는 것, 문제를 해결하는 것을
+  좋아하다 보니 어릴 때 부터 자연스레 개발자를 꿈꾸게 되었습니다. 그 꿈이 변치않아
+  현재도 개발자로 일하기위해 다양한 준비들을 하고 있습니다. 대학 생활 중 안드로이드
+  어플리케이션 개발, 웹 개발 등의 여러 프로젝트에 프론트엔드와 백엔드 가리지 않고
+  열심히 참여하였으며, 졸업후에는 알고리즘 공부, 자격증 취득, 안해봤던 기술 공부 등을
+  하고 있습니다. \n프로그래머라는
+  `
 };
 
 export const skills = {
@@ -42,6 +42,7 @@ export const experience = {
       keywords: [],
       folder: "",
       images: [],
+      pdfs: []
     },
   ],
 };
@@ -58,13 +59,9 @@ export const projects = {
         "웹 프론트엔드 프레임워크인 리액트 실습과 더불어 하나쯤은 있으면 좋겠다 싶었던 이력서페이지를 작성하게 됨",
       ],
       keywords: [icons.HTML, icons.CSS, icons.JavaScript],
-      folder: "./projects/OMR-based-automatic-arrangement-system",
-      images: [
-        5,
-        5,
-        "./projects/1-3.png",
-        "./projects/1-4.png",
-      ],
+      folder: "./OMR-based-automatic-arrangement-system",
+      images: [],
+      pdfs: []
     },
     {
       title: "광학 음악 인식 기반 자동 편곡 시스템",
@@ -82,8 +79,9 @@ export const projects = {
         "모르는 분야에 도전하고 ",
       ],
       keywords: [icons.C, icons.Cpp, icons.Java, icons.Python, icons.OpenCV, icons.Android],
-      folder: "./projects/OMR-based-automatic-arrangement-system",
+      folder: "./OMR-based-automatic-arrangement-system",
       images: [1, 2, 3, 4],
+      pdfs: []
     },
     {
       title: "PC 견적 관리 시스템",
@@ -96,8 +94,9 @@ export const projects = {
         "HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현",
       ],
       keywords: [icons.HTML, icons.CSS, icons.JavaScript, icons.PHP, icons.MySQL],
-      folder: "./projects/PC-auction",
+      folder: "./PC-auction",
       images: [1, 2, 3, 4, 5, 6],
+      pdfs: []
     },
     {
       title: "인터넷 도서 구매 시스템",
@@ -110,8 +109,9 @@ export const projects = {
         "HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현",
       ],
       keywords: [icons.HTML, icons.CSS, icons.JavaScript, icons.PHP, icons.MySQL],
-      folder: "./projects/database-practice",
+      folder: "./database-practice",
       images: [1, 2, 3, 4, 5, 6],
+      pdfs: []
     },
     {
       title: "플리마켓 통합 관리 시스템",
@@ -125,8 +125,9 @@ export const projects = {
         "프로젝트 설계방법과 StarUML과 같은 설계툴에 대해 배울수 있었음",
       ],
       keywords: [],
-      folder: "./projects/OMR-based-automatic-arrangement-system",
+      folder: "./flea-market-integrated-management-system",
       images: [],
+      pdfs: [1, 2, 3, 4, 5]
     },
     {
       title: "TAPC(2)",
@@ -140,8 +141,9 @@ export const projects = {
         "안드로이드 애플리케이션과 웹서버를 처음 연동한 프로젝트",
       ],
       keywords: [icons.Java, icons.JavaScript, icons.Nodejs, icons.MySQL, icons.Android],
-      folder: "./projects/tap-the-taxi-2",
+      folder: "./tap-the-taxi-2",
       images: [1, 2, 3, 4],
+      pdfs: []
     },
     {
       title: "TAPC",
@@ -154,8 +156,9 @@ export const projects = {
         "로그인/로그아웃, 회원가입, 방 생성/참여, 채팅 기능 등이 포함",
       ],
       keywords: [icons.Java, icons.Firebase, icons.Android],
-      folder: "./projects/tap-the-taxi-1",
+      folder: "./tap-the-taxi-1",
       images: [1, 2, 3, 4, 5],
+      pdfs: []
     },
     {
       title: "프로그래밍 포럼",
@@ -167,8 +170,9 @@ export const projects = {
         "서버가 없는 정적 페이지이며 HTML + CSS + JavaScript를 처음으로 실습 해본 프로젝트",
       ],
       keywords: [icons.HTML, icons.CSS, icons.JavaScript],
-      folder: "./projects/programming-forum",
+      folder: "./programming-forum",
       images: [1, 2, 3, 4, 5],
+      pdfs: []
     },
     {
       title: "눈걸이",
@@ -180,8 +184,9 @@ export const projects = {
         "초음파센서와 부저, 진동 모터 등이 사용 됨",
       ],
       keywords: [icons.C, icons.Arduino],
-      folder: "./projects/eyelace",
+      folder: "./eyelace",
       images: [1, 2],
+      pdfs: []
     },
   ],
 };
@@ -198,6 +203,7 @@ export const awards = {
       keywords: [],
       folder: "",
       images: [],
+      pdfs: []
     },
     {
       title: "한국지능시스템학회 30주년 기념 2020 추계학술대회 - 우수논문상",
@@ -208,6 +214,7 @@ export const awards = {
       keywords: [],
       folder: "",
       images: [],
+      pdfs: []
     },
     {
       title: "동서인 AI해커톤 경진대회 - 장려상",
@@ -218,6 +225,7 @@ export const awards = {
       keywords: [],
       folder: "",
       images: [],
+      pdfs: []
     },
     {
       title: "2020년도 동서 AI·SW 아이디어 경진대회 - 장려상",
@@ -228,6 +236,7 @@ export const awards = {
       keywords: [],
       folder: "",
       images: [],
+      pdfs: []
     },
     {
       title: "기초프로그래밍 경진대회 - 우수상",
@@ -238,6 +247,7 @@ export const awards = {
       keywords: [],
       folder: "",
       images: [],
+      pdfs: []
     },
   ],
 };
@@ -257,6 +267,7 @@ export const research = {
       keywords: [],
       folder: "",
       images: [],
+      pdfs: []
     },
     {
       title: "컴퓨터공학부졸업논문집",
@@ -270,6 +281,7 @@ export const research = {
       keywords: [],
       folder: "",
       images: [],
+      pdfs: []
     },
     {
       title: "한국지능시스템학회 30주년 기념 2020 추계학술대회",
@@ -283,6 +295,7 @@ export const research = {
       keywords: [],
       folder: "",
       images: [],
+      pdfs: []
     },
     {
       title: "발명 특허 출원",
@@ -295,6 +308,7 @@ export const research = {
       keywords: [],
       folder: "",
       images: [],
+      pdfs: []
     },
     {
       title: "ICCT2020 SCOPUS",
@@ -309,6 +323,7 @@ export const research = {
       keywords: [],
       folder: "",
       images: [],
+      pdfs: []
     },
     {
       title:
@@ -324,6 +339,7 @@ export const research = {
       keywords: [],
       folder: "",
       images: [],
+      pdfs: []
     },
   ],
 };
@@ -340,6 +356,7 @@ export const education = {
       keywords: [],
       folder: "",
       images: [],
+      pdfs: []
     },
     {
       title: "부산남일고등학교 졸업",
@@ -350,6 +367,7 @@ export const education = {
       keywords: [],
       folder: "",
       images: [],
+      pdfs: []
     },
   ],
 };
@@ -366,6 +384,7 @@ export const certificate = {
       keywords: [],
       folder: "",
       images: [],
+      pdfs: []
     },
     {
       title: "컴퓨터활용능력 1급",
@@ -376,6 +395,7 @@ export const certificate = {
       keywords: [],
       folder: "",
       images: [],
+      pdfs: []
     },
     {
       title: "워드프로세서",
@@ -386,6 +406,7 @@ export const certificate = {
       keywords: [],
       folder: "",
       images: [],
+      pdfs: []
     },
   ],
 };

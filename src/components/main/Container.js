@@ -1,9 +1,9 @@
-import styles from '../../styles.module.scss';
+import { Component } from 'react';
 import Subject from '../Subject';
 import Wrapper from './Wrapper'
-import { Component } from 'react';
+import styles from '../../styles.module.scss';
 
-class App extends Component {
+class Container extends Component {
     render() {
         const subject = this.props.contents.subject;
         const contents = this.props.contents.contents;
@@ -18,4 +18,4 @@ class App extends Component {
     }
 }
 
-export default App
+export default Container;

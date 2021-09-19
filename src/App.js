@@ -1,23 +1,19 @@
-import { header, intro, skills, main, footer } from "./resume";
-import Header from "./components/header/Container";
-import Intro from "./components/intro/Container";
-import Skills from "./components/skills/Container";
-import Main from "./components/main/Container";
-import Footer from "./components/Footer";
 import { Component } from "react";
+import { Route } from 'react-router-dom';
+import { pdfjs } from 'react-pdf';
+import Resume from './pages/Resume';
+import PDFViewer from './pages/PDFViewer';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Header contents={header} />
-        <Intro contents={intro} />
-        <Skills contents={skills} />
-        {main.map((content, i) => <Main key={`${i}_content`} contents={content} />)}
-        <Footer footer={footer} />
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className="App">
+                <Route exact path="/" component={Resume} />
+                <Route exact path="/pdfviewer/:folder/:pdf" component={PDFViewer} />
+            </div>
+        );
+    }
 }
 
 export default App;

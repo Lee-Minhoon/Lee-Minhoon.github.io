@@ -1,0 +1,44 @@
+@import '../mixin.module.scss';
+
+.PDFViewer {
+  div {
+    div {
+      margin-top: 10px;
+      canvas {
+        margin: 0px auto;
+      }
+      div {
+        border: 1px solid blue;
+      }
+    }
+  }
+}
+
+.react-pdf__Page__canvas {
+  border: 2px solid black;
+}
+
+// /* For pdf */
+// .react-pdf__Page {
+//     margin-top: 10px;
+//   }
+// .react-pdf__Page__textContent {
+// border: 1px solid darkgrey;
+// box-shadow: 5px 5px 5px 1px #ccc;
+// border-radius: 5px;
+// }
+
+// .react-pdf__Page__annotations.annotationLayer {
+// padding: 20px;
+// }
+
+// .react-pdf__Page__canvas {
+// margin: 0 auto;
+// }
+
+// /* For all pages */
+// .all-page-container {
+// height: 100%;
+// max-height: 500px;
+// overflow: auto;
+// }
