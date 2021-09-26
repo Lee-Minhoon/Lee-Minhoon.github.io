@@ -1,14 +1,15 @@
-import styles from '../../styles.module.scss';
 import { Component } from 'react';
+import styles from '../../styles.module.scss';
+import skills from './skills.module.scss';
 
 class App extends Component {
     render() {
         const content = this.props.content;
-        const tech = content.techs.map((tech) => (<p>{tech}</p>))
+        const desc = content.desc.map((desc) => (<span className={skills.skill}><li>{desc}</li></span>))
 
         return (
             <div className={styles.Right}>
-                {tech}
+                {desc}
             </div>
         );
     }

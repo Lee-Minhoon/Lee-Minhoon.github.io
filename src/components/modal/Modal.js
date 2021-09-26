@@ -9,15 +9,11 @@ class Modal extends Component {
             index: this.props.index
         };
     }
+
     imageChange = (index) => {
         this.setState({
             index: index
         });
-    }
-
-    componentWillUnmount() {
-        // 이부분에서 강제로 저 엑스창을 잡고있다가 풀어주면됨 혹시아니면 
-        console.log("unmound modal")
     }
 
     render() {

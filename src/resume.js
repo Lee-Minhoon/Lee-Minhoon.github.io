@@ -9,7 +9,7 @@ export const header = {
 };
 
 export const intro = {
-  subject: "Summary",
+  subject: "Introduce",
   profile: "profile.jpg",
   intro: `
   안녕하세요! 개발자 지망생 이민훈입니다. 뭔가를 만드는 것, 문제를 해결하는 것을
@@ -24,9 +24,18 @@ export const intro = {
 export const skills = {
   subject: "Skills",
   contents: [
-    { category: "Frontend", techs: ["Java", "C++"] },
-    { category: "Backend", techs: ["Java", "C++"] },
-    { category: "DevOps", techs: ["Java", "C++"] },
+    {
+      category: "Frontend",
+      desc: ["React", "HTML", "CSS", "JavaScript"]
+    },
+    {
+      category: "Backend",
+      desc: ["Nodejs", "PHP", "C++", "JAVA", "Python"]
+    },
+    {
+      category: "DevOps",
+      desc: ["MySQL"]
+    },
   ],
 };
 
@@ -34,15 +43,19 @@ export const experience = {
   subject: "Experience",
   contents: [
     {
-      title: "인턴 근무",
-      subtitle: "서르 근무",
+      title: "(주)서르 인턴 근무",
+      subtitle: "동서대학교 2020학년도 하계 국내인턴십",
       period: "2020.07 ~ 2020.08",
       link: "https://github.com/Lee-Minhoon",
-      desc: ["~~한 프로젝트", "2223"],
+      desc: [
+        "Python을 이용해 AI데이터 라벨링 툴 제작",
+        "UI 구현을 위해 PyQt5, 데이터 조작을 위해 Pandas, NumPy 등을 사용함"
+      ],
       keywords: [],
       folder: "",
       images: [],
-      pdfs: []
+      pdfs: [],
+      abstract: ""
     },
   ],
 };
@@ -58,10 +71,11 @@ export const projects = {
       desc: [
         "웹 프론트엔드 프레임워크인 리액트 실습과 더불어 하나쯤은 있으면 좋겠다 싶었던 이력서페이지를 작성하게 됨",
       ],
-      keywords: [icons.HTML, icons.CSS, icons.JavaScript],
+      keywords: ["React", "HTML", "CSS", "JavaScript"],
       folder: "./OMR-based-automatic-arrangement-system",
       images: [],
-      pdfs: []
+      pdfs: [],
+      abstract: ""
     },
     {
       title: "광학 음악 인식 기반 자동 편곡 시스템",
@@ -78,10 +92,11 @@ export const projects = {
         "본 프로젝트를 통해 작게 나마 컴퓨터비전, 머신 러닝 등 인공지능 분야의 학습계기가 됨",
         "모르는 분야에 도전하고 ",
       ],
-      keywords: [icons.C, icons.Cpp, icons.Java, icons.Python, icons.OpenCV, icons.Android],
+      keywords: ["OpenCV", "TensorFlow", "C++", "Java", "Python", "Android"],
       folder: "./OMR-based-automatic-arrangement-system",
       images: [1, 2, 3, 4],
-      pdfs: []
+      pdfs: [],
+      abstract: ""
     },
     {
       title: "PC 견적 관리 시스템",
@@ -93,10 +108,11 @@ export const projects = {
         "로그인/로그아웃, 회원가입, 역경매/입찰, 페이징, 관리자 페이지 등의 기능 제공",
         "HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현",
       ],
-      keywords: [icons.HTML, icons.CSS, icons.JavaScript, icons.PHP, icons.MySQL],
+      keywords: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
       folder: "./PC-auction",
       images: [1, 2, 3, 4, 5, 6],
-      pdfs: []
+      pdfs: [],
+      abstract: ""
     },
     {
       title: "인터넷 도서 구매 시스템",
@@ -108,10 +124,11 @@ export const projects = {
         "로그인/로그아웃, 회원가입, 마이페이지(카드, 장바구니, 주문내역, 주문상세), 주문, 리뷰 등의 기능 제공",
         "HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현",
       ],
-      keywords: [icons.HTML, icons.CSS, icons.JavaScript, icons.PHP, icons.MySQL],
+      keywords: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
       folder: "./database-practice",
       images: [1, 2, 3, 4, 5, 6],
-      pdfs: []
+      pdfs: [],
+      abstract: ""
     },
     {
       title: "플리마켓 통합 관리 시스템",
@@ -124,10 +141,11 @@ export const projects = {
         "플리마켓의 셀러와 주최자, 참가자에게 기존의 불편한 요소들을 해소할 수 있도록 하는 플리마켓 통합 관리 시스템",
         "프로젝트 설계방법과 StarUML과 같은 설계툴에 대해 배울수 있었음",
       ],
-      keywords: [],
+      keywords: ["StarUML"],
       folder: "./flea-market-integrated-management-system",
       images: [],
-      pdfs: [1, 2, 3, 4, 5]
+      pdfs: [1, 2, 3, 4, 5],
+      abstract: ""
     },
     {
       title: "TAPC(2)",
@@ -140,10 +158,11 @@ export const projects = {
         "로그인/로그아웃, 회원가입 등을 위한 http 서버와 매칭/채팅을 위한 소켓 서버를 구현",
         "안드로이드 애플리케이션과 웹서버를 처음 연동한 프로젝트",
       ],
-      keywords: [icons.Java, icons.JavaScript, icons.Nodejs, icons.MySQL, icons.Android],
+      keywords: ["Nodejs", "MySQL", "Java", "JavaScript", "Android"],
       folder: "./tap-the-taxi-2",
       images: [1, 2, 3, 4],
-      pdfs: []
+      pdfs: [],
+      abstract: ""
     },
     {
       title: "TAPC",
@@ -155,10 +174,11 @@ export const projects = {
         "웹 서버에 대한 지식이 전무해 Google Firebase를 통해 데이터베이스를 구현",
         "로그인/로그아웃, 회원가입, 방 생성/참여, 채팅 기능 등이 포함",
       ],
-      keywords: [icons.Java, icons.Firebase, icons.Android],
+      keywords: ["Firebase", "Java", "Android"],
       folder: "./tap-the-taxi-1",
       images: [1, 2, 3, 4, 5],
-      pdfs: []
+      pdfs: [],
+      abstract: ""
     },
     {
       title: "프로그래밍 포럼",
@@ -169,10 +189,11 @@ export const projects = {
         "한국에 대형 프로그래밍 커뮤니티가 부족하다 생각하여 만든 사이트",
         "서버가 없는 정적 페이지이며 HTML + CSS + JavaScript를 처음으로 실습 해본 프로젝트",
       ],
-      keywords: [icons.HTML, icons.CSS, icons.JavaScript],
+      keywords: ["HTML", "CSS", "JavaScript"],
       folder: "./programming-forum",
       images: [1, 2, 3, 4, 5],
-      pdfs: []
+      pdfs: [],
+      abstract: ""
     },
     {
       title: "눈걸이",
@@ -183,10 +204,11 @@ export const projects = {
         "시각장애인을 위해 만들어진 장애물과의 거리를 알려주는 목걸이",
         "초음파센서와 부저, 진동 모터 등이 사용 됨",
       ],
-      keywords: [icons.C, icons.Arduino],
+      keywords: ["Arduino", "C"],
       folder: "./eyelace",
       images: [1, 2],
-      pdfs: []
+      pdfs: [],
+      abstract: ""
     },
   ],
 };
@@ -203,7 +225,8 @@ export const awards = {
       keywords: [],
       folder: "",
       images: [],
-      pdfs: []
+      pdfs: [],
+      abstract: ""
     },
     {
       title: "한국지능시스템학회 30주년 기념 2020 추계학술대회 - 우수논문상",
@@ -214,7 +237,8 @@ export const awards = {
       keywords: [],
       folder: "",
       images: [],
-      pdfs: []
+      pdfs: [],
+      abstract: ""
     },
     {
       title: "동서인 AI해커톤 경진대회 - 장려상",
@@ -225,7 +249,8 @@ export const awards = {
       keywords: [],
       folder: "",
       images: [],
-      pdfs: []
+      pdfs: [],
+      abstract: ""
     },
     {
       title: "2020년도 동서 AI·SW 아이디어 경진대회 - 장려상",
@@ -236,7 +261,8 @@ export const awards = {
       keywords: [],
       folder: "",
       images: [],
-      pdfs: []
+      pdfs: [],
+      abstract: ""
     },
     {
       title: "기초프로그래밍 경진대회 - 우수상",
@@ -247,7 +273,8 @@ export const awards = {
       keywords: [],
       folder: "",
       images: [],
-      pdfs: []
+      pdfs: [],
+      abstract: ""
     },
   ],
 };
@@ -262,12 +289,12 @@ export const research = {
       link: "https://m.blog.naver.com/computer_ck/221128532267",
       desc: [
         "구분 : Journal",
-        "흔히 음악을 추상적이고 불확실성이 높은 예술 분야라 생각하지만, 엄연히 화성학과 대위법 등 정립된 이론이 존재한다. 컴퓨터와 인공지능이 등장함에 따라 이런 이론들을 바탕으로 음악을 작곡하거나 편곡하려는 시도가 생겨났고, 현재까지도 많은 연구가 진행되고 있다. 본 논문에서는 악보 이미지를 입력받아 알고리즘을 통해 자동 편곡한 음악 파일을 출력할 수 있도록 하는 악보 인식 기반 자동 편곡 시스템을 제안하였다. 광학 음악 인식을 통해 악보를 컴퓨터가 이해하기 쉬운 데이터 형태로 변환하였고, 멜로디를 기반으로 코드를 생성함으로써 편곡 시스템의 일부분을 구현하였다. 코드를 생성하는 작업에는 실제 악곡의 멜로디와 코드를 기반으로 심층 신경망을 사용하였다. 코드를 생성하는 데에는 다양한 선택지가 있음에도 불구, 실제 악곡과의 비교에서 약 55%의 일치율을 보였다.",
       ],
       keywords: [],
       folder: "",
       images: [],
-      pdfs: []
+      pdfs: [],
+      abstract: "흔히 음악을 추상적이고 불확실성이 높은 예술 분야라 생각하지만, 엄연히 화성학과 대위법 등 정립된 이론이 존재한다. 컴퓨터와 인공지능이 등장함에 따라 이런 이론들을 바탕으로 음악을 작곡하거나 편곡하려는 시도가 생겨났고, 현재까지도 많은 연구가 진행되고 있다. 본 논문에서는 악보 이미지를 입력받아 알고리즘을 통해 자동 편곡한 음악 파일을 출력할 수 있도록 하는 악보 인식 기반 자동 편곡 시스템을 제안하였다. 광학 음악 인식을 통해 악보를 컴퓨터가 이해하기 쉬운 데이터 형태로 변환하였고, 멜로디를 기반으로 코드를 생성함으로써 편곡 시스템의 일부분을 구현하였다. 코드를 생성하는 작업에는 실제 악곡의 멜로디와 코드를 기반으로 심층 신경망을 사용하였다. 코드를 생성하는 데에는 다양한 선택지가 있음에도 불구, 실제 악곡과의 비교에서 약 55%의 일치율을 보였다."
     },
     {
       title: "컴퓨터공학부졸업논문집",
@@ -275,13 +302,13 @@ export const research = {
       period: "2020.11.28",
       link: "https://m.blog.naver.com/computer_ck/221128532267",
       desc: [
-        "구분 : Thesis",
-        "4차 산업혁명이 진행되며 인공지능이 다양한 분야에서 활용되고 있다. 음악 분야 또한 인공지능과의 융합에 많은 연구가 진행되고 있다. 한편 사회 전반적으로 음악에 대한 수요는 꾸준히 늘고 있으며, 그중에서도 편곡에 대한 관심이 늘고 있다. 다만 편곡 작업은 진입장벽이 높아, 전공자가 아닌 일반인들이 시도하기에는 어려움이 있다. 이에 따라 본 논문에서는 광학 음악 인식 기반 자동 편곡 시스템을 제안한다. 편곡을 위한 데이터 확보를 위해 광학 음악 인식을 사용하였고 편곡 과정 중, 화성 생성의 경우 멜로디에 기반한 신경망 기법을 사용하였다. 제안한 광학 음악 인식 기법은 복잡도 ‘하’에 해당하는 악보 20장에 대해 95%의 인식률을 보였으며 신경망을 통해 생성된 화성들은 화성학에 근거하여 실제 편곡에 적용할 수 있음을 확인하였다.",
+        "구분 : Thesis"
       ],
       keywords: [],
       folder: "",
       images: [],
-      pdfs: []
+      pdfs: [],
+      abstract: "4차 산업혁명이 진행되며 인공지능이 다양한 분야에서 활용되고 있다. 음악 분야 또한 인공지능과의 융합에 많은 연구가 진행되고 있다. 한편 사회 전반적으로 음악에 대한 수요는 꾸준히 늘고 있으며, 그중에서도 편곡에 대한 관심이 늘고 있다. 다만 편곡 작업은 진입장벽이 높아, 전공자가 아닌 일반인들이 시도하기에는 어려움이 있다. 이에 따라 본 논문에서는 광학 음악 인식 기반 자동 편곡 시스템을 제안한다. 편곡을 위한 데이터 확보를 위해 광학 음악 인식을 사용하였고 편곡 과정 중, 화성 생성의 경우 멜로디에 기반한 신경망 기법을 사용하였다. 제안한 광학 음악 인식 기법은 복잡도 ‘하’에 해당하는 악보 20장에 대해 95%의 인식률을 보였으며 신경망을 통해 생성된 화성들은 화성학에 근거하여 실제 편곡에 적용할 수 있음을 확인하였다."
     },
     {
       title: "한국지능시스템학회 30주년 기념 2020 추계학술대회",
@@ -289,26 +316,25 @@ export const research = {
       period: "2020.11.28",
       link: "https://m.blog.naver.com/computer_ck/221128532267",
       desc: [
-        "구분 : Conference",
-        "인공지능에 대한 관심과 활용이 증가함에 따라 4차 산업혁명의 주요 기술로 각광받고 있다. 음악분야에서도 인공지능과의 융합에 많은 연구가 활발히 진행되고 있다. 본 논문에서는 광학음악인식 기반 자동 편곡 시스템을 제안한다. 편곡에는 템포 조절, 조옮김, 화성 생성과 같은 다양한 과정이 포함된다. 편곡을 위한 데이터 확보를 위해 광학 음악 인식을 사용하였고 멜로디에 어울리는 화성을 생성하기 위해 신경망 기법을 사용하였다. 생성된 화성들은 화성학에 근거하여 실제 편곡에 적용시킬 수 있음을 확인하였다.",
+        "구분 : Conference"
       ],
       keywords: [],
       folder: "",
       images: [],
-      pdfs: []
+      pdfs: [],
+      abstract: "인공지능에 대한 관심과 활용이 증가함에 따라 4차 산업혁명의 주요 기술로 각광받고 있다. 음악분야에서도 인공지능과의 융합에 많은 연구가 활발히 진행되고 있다. 본 논문에서는 광학음악인식 기반 자동 편곡 시스템을 제안한다. 편곡에는 템포 조절, 조옮김, 화성 생성과 같은 다양한 과정이 포함된다. 편곡을 위한 데이터 확보를 위해 광학 음악 인식을 사용하였고 멜로디에 어울리는 화성을 생성하기 위해 신경망 기법을 사용하였다. 생성된 화성들은 화성학에 근거하여 실제 편곡에 적용시킬 수 있음을 확인하였다."
     },
     {
       title: "발명 특허 출원",
       subtitle: "악보 인식 기반 편곡 장치 및 악보 인식 기반 편곡 방법",
       period: "2020.11.10",
       link: "https://m.blog.naver.com/computer_ck/221128532267",
-      desc: [
-        "본 발명은 악보 인식 기반 편곡 장치 및 방법에 관한 것으로, 더 상세하게는 광학 인식 알고리즘을 이용하여 악보로부터 데이터를 추출하고, 추출된 데이터를 편집함으로써 사용자가 쉽게 악보를 편곡하도록 제공하며, 편곡된 음악을 파일로 제공받도록 하는 악보 인식 기반 편곡 장치 및 방법에 관한 것이다.",
-      ],
+      desc: [],
       keywords: [],
       folder: "",
       images: [],
-      pdfs: []
+      pdfs: [],
+      abstract: "본 발명은 악보 인식 기반 편곡 장치 및 방법에 관한 것으로, 더 상세하게는 광학 인식 알고리즘을 이용하여 악보로부터 데이터를 추출하고, 추출된 데이터를 편집함으로써 사용자가 쉽게 악보를 편곡하도록 제공하며, 편곡된 음악을 파일로 제공받도록 하는 악보 인식 기반 편곡 장치 및 방법에 관한 것이다."
     },
     {
       title: "ICCT2020 SCOPUS",
@@ -318,12 +344,12 @@ export const research = {
       link: "https://m.blog.naver.com/computer_ck/221128532267",
       desc: [
         "구분 : SCOPUS",
-        "Computer vision is an artificial intelligence technology that studies techniques for extracting information from images. Several studies have been performed to identify and edit music scores using computer vision. This study proposes a system to identify musical notes and print arranged music. Music is produced by general rules; consequently, the components of music have specific patterns. There are four approaches in pattern recognition that can be used classify images using patterns. Our proposed method of identifying music sheets is as follows. Several pretreatment processes (image binary, noise and staff elimination, image resizing) are performed to aid the identification. The components of the music sheet are identified by statistical pattern recognition. Applying an artificial intelligence model (Markov chain) to extracted music data aids in arranging the data. From applying the pattern recognition technique, a recognition rate of 100% was shown for music sheets of low complexity. The components included in the recognition rate are signs, notes, and beats. However, there was a low recognition rate for some music sheet and can be addressed by adding a classification to the navigation process. To increase the recognition rate of the music sheet with intermediate complexity, it is necessary to refine the pre-processing process and pattern recognition algorithm. We will also apply neural network-based models to the arrangement process.",
       ],
       keywords: [],
       folder: "",
       images: [],
-      pdfs: []
+      pdfs: [],
+      abstract: "Computer vision is an artificial intelligence technology that studies techniques for extracting information from images. Several studies have been performed to identify and edit music scores using computer vision. This study proposes a system to identify musical notes and print arranged music. Music is produced by general rules; consequently, the components of music have specific patterns. There are four approaches in pattern recognition that can be used classify images using patterns. Our proposed method of identifying music sheets is as follows. Several pretreatment processes (image binary, noise and staff elimination, image resizing) are performed to aid the identification. The components of the music sheet are identified by statistical pattern recognition. Applying an artificial intelligence model (Markov chain) to extracted music data aids in arranging the data. From applying the pattern recognition technique, a recognition rate of 100% was shown for music sheets of low complexity. The components included in the recognition rate are signs, notes, and beats. However, there was a low recognition rate for some music sheet and can be addressed by adding a classification to the navigation process. To increase the recognition rate of the music sheet with intermediate complexity, it is necessary to refine the pre-processing process and pattern recognition algorithm. We will also apply neural network-based models to the arrangement process."
     },
     {
       title:
@@ -333,13 +359,13 @@ export const research = {
       period: "2020.07.09",
       link: "https://m.blog.naver.com/computer_ck/221128532267",
       desc: [
-        "구분 : Conference",
-        "In general, the demand for music is increasing among them; the demand and interest for remake songs are increasing. However, the skill related to the arrangement is difficult to learn, and its quantity has been recognized only as an expert area. On the other hand, AI (artificial intelligence) is active in many fields, among which music-related AI is also in the spotlight. In this paper, we proposed the contents of the development of a system that makes it easy for the general public who is not a music major to arrange music using computer vision and machine learning technology easily. Initially, a template matching algorithm was applied to score recognition. However, there was a problem with a low recognition rate. In order to solve the problem, we proposed advanced optical music recognition with high versatility.",
+        "구분 : Conference"
       ],
       keywords: [],
       folder: "",
       images: [],
-      pdfs: []
+      pdfs: [],
+      abstract: "In general, the demand for music is increasing among them; the demand and interest for remake songs are increasing. However, the skill related to the arrangement is difficult to learn, and its quantity has been recognized only as an expert area. On the other hand, AI (artificial intelligence) is active in many fields, among which music-related AI is also in the spotlight. In this paper, we proposed the contents of the development of a system that makes it easy for the general public who is not a music major to arrange music using computer vision and machine learning technology easily. Initially, a template matching algorithm was applied to score recognition. However, there was a problem with a low recognition rate. In order to solve the problem, we proposed advanced optical music recognition with high versatility."
     },
   ],
 };
@@ -356,7 +382,8 @@ export const education = {
       keywords: [],
       folder: "",
       images: [],
-      pdfs: []
+      pdfs: [],
+      abstract: ""
     },
     {
       title: "부산남일고등학교 졸업",
@@ -367,7 +394,8 @@ export const education = {
       keywords: [],
       folder: "",
       images: [],
-      pdfs: []
+      pdfs: [],
+      abstract: ""
     },
   ],
 };
@@ -384,7 +412,8 @@ export const certificate = {
       keywords: [],
       folder: "",
       images: [],
-      pdfs: []
+      pdfs: [],
+      abstract: ""
     },
     {
       title: "컴퓨터활용능력 1급",
@@ -395,7 +424,8 @@ export const certificate = {
       keywords: [],
       folder: "",
       images: [],
-      pdfs: []
+      pdfs: [],
+      abstract: ""
     },
     {
       title: "워드프로세서",
@@ -406,7 +436,8 @@ export const certificate = {
       keywords: [],
       folder: "",
       images: [],
-      pdfs: []
+      pdfs: [],
+      abstract: ""
     },
   ],
 };

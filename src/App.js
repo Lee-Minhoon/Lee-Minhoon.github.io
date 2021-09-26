@@ -8,7 +8,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 class App extends Component {
     render() {
         return (
-            <div className="App">
+            <div>
                 <Route exact path="/" component={Resume} />
                 <Route exact path="/pdfviewer/:folder/:pdf" component={PDFViewer} />
             </div>

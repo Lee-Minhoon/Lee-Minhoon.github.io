@@ -1,7 +1,7 @@
-import styles from '../../styles.module.scss';
-import Subject from '../Subject';
-import Wrapper from './Wrapper'
 import { Component } from 'react';
+import Subject from '../Subject';
+import Wrapper from './Wrapper';
+import styles from '../../styles.module.scss';
 
 class App extends Component {
     render() {

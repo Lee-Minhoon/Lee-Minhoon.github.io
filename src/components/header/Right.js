@@ -1,6 +1,6 @@
 import { Component } from 'react';
-import header from './header.module.scss';
 import styles from '../../styles.module.scss';
+import header from './header.module.scss';
 
 class Right extends Component {
     render() {

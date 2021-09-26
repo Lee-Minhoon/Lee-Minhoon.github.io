@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import styles from '../../styles.module.scss';
-import summary from './summary.module.scss';
+import intro from './intro.module.scss';
 
 class Left extends Component {
     render() {
@@ -8,7 +8,7 @@ class Left extends Component {
 
         return (
             <div className={styles.Left}>
-                <img className={summary.Profile} src={content.profile} alt='profile'></img>
+                <img className={intro.Profile} src={content.profile} alt='profile'></img>
             </div>
         );
     }
