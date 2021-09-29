@@ -48,8 +48,8 @@ export const experience = {
       period: "2020.07 ~ 2020.08",
       link: "https://github.com/Lee-Minhoon",
       desc: [
-        "Python을 이용해 AI데이터 라벨링 툴 제작",
-        "UI 구현을 위해 PyQt5, 데이터 조작을 위해 Pandas, NumPy 등을 사용함"
+        { main: "Python을 이용해 AI데이터 라벨링 툴 제작", sub: [] },
+        { main: "UI 구현을 위해 PyQt5, 데이터 조작을 위해 Pandas, NumPy 등을 사용함", sub: [] }
       ],
       keywords: [],
       folder: "",
@@ -69,7 +69,7 @@ export const projects = {
       period: "2020.09 ~ ",
       link: "https://github.com/Lee-Minhoon/capstone-design",
       desc: [
-        "웹 프론트엔드 프레임워크인 리액트 실습과 더불어 하나쯤은 있으면 좋겠다 싶었던 이력서페이지를 작성하게 됨",
+        { main: "웹 프론트엔드 프레임워크인 리액트 실습과 더불어 하나쯤은 있으면 좋겠다 싶었던 이력서페이지를 작성하게 됨", sub: [] }
       ],
       keywords: ["React", "HTML", "CSS", "JavaScript"],
       folder: "./OMR-based-automatic-arrangement-system",
@@ -83,14 +83,13 @@ export const projects = {
       period: "2020.03 ~ 2020.12",
       link: "https://github.com/Lee-Minhoon/capstone-design",
       desc: [
-        "비전문가들도 악보를 데이터화하여 쉽게 편집하고 음악 파일로 출력할 수 있는 악보 인식 기반 편곡 장치를 제공하고자 함",
-        "사용자는 편곡하고자 하는 음악의 악보를 입력하고 편곡된 음악 파일을 제공 받음",
-        "크게 광학 음악 인식 모듈과 자동 편곡 모듈로 구성",
-        "광학 음악 인식 모듈에 OpenCV 라이브러리를 사용하였으며, 속도를 위해 jni + ndk를 사용함",
-        "클라이언트는 안드로이드 애플리케이션, 서버는 파이썬으로 구현",
-        "악보를 인식하는 과정은 30여 개가 넘는 악보의 구성요소들을 인식하고 분류해야함",
-        "본 프로젝트를 통해 작게 나마 컴퓨터비전, 머신 러닝 등 인공지능 분야의 학습계기가 됨",
-        "모르는 분야에 도전하고 ",
+        { main: "비전문가들도 악보를 데이터화하여 쉽게 편집하고 음악 파일로 출력할 수 있는 악보 인식 기반 편곡 장치를 제공하고자 함", sub: [] },
+        { main: "사용자는 편곡하고자 하는 음악의 악보를 입력하고 편곡된 음악 파일을 제공 받음", sub: [1, 2, 3] },
+        { main: "크게 광학 음악 인식 모듈과 자동 편곡 모듈로 구성", sub: [1, 2, 3] },
+        { main: "광학 음악 인식 모듈에 OpenCV 라이브러리를 사용하였으며, 속도를 위해 jni + ndk를 사용함", sub: [] },
+        { main: "클라이언트는 안드로이드 애플리케이션, 서버는 파이썬으로 구현", sub: [] },
+        { main: "악보를 인식하는 과정은 30여 개가 넘는 악보의 구성요소들을 인식하고 분류해야함", sub: [] },
+        { main: "본 프로젝트를 통해 작게 나마 컴퓨터비전, 머신 러닝 등 인공지능 분야의 학습계기가 됨", sub: [] }
       ],
       keywords: ["OpenCV", "TensorFlow", "C++", "Java", "Python", "Android"],
       folder: "./OMR-based-automatic-arrangement-system",
@@ -104,9 +103,9 @@ export const projects = {
       period: "2019.09 ~ 2019.12",
       link: "https://github.com/Lee-Minhoon/PC-auction",
       desc: [
-        "PC부품에 대한 지식 없이 조립형 PC를 구매할 수 있는 PC견적 및 경매 사이트",
-        "로그인/로그아웃, 회원가입, 역경매/입찰, 페이징, 관리자 페이지 등의 기능 제공",
-        "HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현",
+        { main: "PC부품에 대한 지식 없이 조립형 PC를 구매할 수 있는 PC견적 및 경매 사이트", sub: [] },
+        { main: "로그인/로그아웃, 회원가입, 역경매/입찰, 페이징, 관리자 페이지 등의 기능 제공", sub: [] },
+        { main: "HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현", sub: [] }
       ],
       keywords: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
       folder: "./PC-auction",
@@ -120,9 +119,9 @@ export const projects = {
       period: "2019.09 ~ 2019.12",
       link: "https://github.com/Lee-Minhoon/PC-auction",
       desc: [
-        "데이터베이스 실습을 위해 알라딘, YES24, 리디북스와 같은 온라인 도서 구매 사이트를 구현",
-        "로그인/로그아웃, 회원가입, 마이페이지(카드, 장바구니, 주문내역, 주문상세), 주문, 리뷰 등의 기능 제공",
-        "HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현",
+        { main: "데이터베이스 실습을 위해 알라딘, YES24, 리디북스와 같은 온라인 도서 구매 사이트를 구현", sub: [] },
+        { main: "로그인/로그아웃, 회원가입, 마이페이지(카드, 장바구니, 주문내역, 주문상세), 주문, 리뷰 등의 기능 제공", sub: [] },
+        { main: "HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현", sub: [] }
       ],
       keywords: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
       folder: "./database-practice",
@@ -136,10 +135,10 @@ export const projects = {
       period: "2019.09 ~ 2019.12",
       link: "https://github.com/Lee-Minhoon",
       desc: [
-        "해당 프로젝트는 개발 직전 단계까지의 설계를 목표로 두고 다양한 설계문서를 작성 해 본 프로젝트",
-        "설계 문서는 프로젝트 정의서, 요구사항기술서, 클래스분석서, UI설계서, 데이트베이스설계서 등을 작성",
-        "플리마켓의 셀러와 주최자, 참가자에게 기존의 불편한 요소들을 해소할 수 있도록 하는 플리마켓 통합 관리 시스템",
-        "프로젝트 설계방법과 StarUML과 같은 설계툴에 대해 배울수 있었음",
+        { main: "해당 프로젝트는 개발 직전 단계까지의 설계를 목표로 두고 다양한 설계문서를 작성 해 본 프로젝트", sub: [] },
+        { main: "설계 문서는 프로젝트 정의서, 요구사항기술서, 클래스분석서, UI설계서, 데이트베이스설계서 등을 작성", sub: [] },
+        { main: "플리마켓의 셀러와 주최자, 참가자에게 기존의 불편한 요소들을 해소할 수 있도록 하는 플리마켓 통합 관리 시스템", sub: [] },
+        { main: "프로젝트 설계방법과 StarUML과 같은 설계툴에 대해 배울수 있었음", sub: [] }
       ],
       keywords: ["StarUML"],
       folder: "./flea-market-integrated-management-system",
@@ -153,10 +152,10 @@ export const projects = {
       period: "2019.09 ~ 2019.12",
       link: "https://github.com/Lee-Minhoon/tap-the-taxi-2",
       desc: [
-        "Firebase를 대체할 웹 서버를 구현하여 만든 TAPC 후속 프로젝트",
-        "클라이언트는 안드로이드 애플리케이션, 서버는 Node.js, DB는 MySQL로 구현",
-        "로그인/로그아웃, 회원가입 등을 위한 http 서버와 매칭/채팅을 위한 소켓 서버를 구현",
-        "안드로이드 애플리케이션과 웹서버를 처음 연동한 프로젝트",
+        { main: "Firebase를 대체할 웹 서버를 구현하여 만든 TAPC 후속 프로젝트", sub: [] },
+        { main: "클라이언트는 안드로이드 애플리케이션, 서버는 Node.js, DB는 MySQL로 구현", sub: [] },
+        { main: "로그인/로그아웃, 회원가입 등을 위한 http 서버와 매칭/채팅을 위한 소켓 서버를 구현", sub: [] },
+        { main: "안드로이드 애플리케이션과 웹서버를 처음 연동한 프로젝트", sub: [] }
       ],
       keywords: ["Nodejs", "MySQL", "Java", "JavaScript", "Android"],
       folder: "./tap-the-taxi-2",
@@ -170,9 +169,9 @@ export const projects = {
       period: "2019.03 ~ 2019.06",
       link: "https://github.com/Lee-Minhoon/tap-the-taxi-2",
       desc: [
-        "고지대에 위치한 학교의 지리적 특성에 택시합승관련 어플리케이션을 설계, 개발",
-        "웹 서버에 대한 지식이 전무해 Google Firebase를 통해 데이터베이스를 구현",
-        "로그인/로그아웃, 회원가입, 방 생성/참여, 채팅 기능 등이 포함",
+        { main: "고지대에 위치한 학교의 지리적 특성에 택시합승관련 어플리케이션을 설계, 개발", sub: [] },
+        { main: "웹 서버에 대한 지식이 전무해 Google Firebase를 통해 데이터베이스를 구현", sub: [] },
+        { main: "로그인/로그아웃, 회원가입, 방 생성/참여, 채팅 기능 등이 포함", sub: [] }
       ],
       keywords: ["Firebase", "Java", "Android"],
       folder: "./tap-the-taxi-1",
@@ -186,8 +185,8 @@ export const projects = {
       period: "2018.03 ~ 2018.06",
       link: "https://github.com/Lee-Minhoon/programming-forum",
       desc: [
-        "한국에 대형 프로그래밍 커뮤니티가 부족하다 생각하여 만든 사이트",
-        "서버가 없는 정적 페이지이며 HTML + CSS + JavaScript를 처음으로 실습 해본 프로젝트",
+        { main: "한국에 대형 프로그래밍 커뮤니티가 부족하다 생각하여 만든 사이트", sub: [] },
+        { main: "서버가 없는 정적 페이지이며 HTML + CSS + JavaScript를 처음으로 실습 해본 프로젝트", sub: [] }
       ],
       keywords: ["HTML", "CSS", "JavaScript"],
       folder: "./programming-forum",
@@ -201,8 +200,8 @@ export const projects = {
       period: "2018.03 ~ 2018.06",
       link: "https://github.com/Lee-Minhoon/tap-the-taxi-2",
       desc: [
-        "시각장애인을 위해 만들어진 장애물과의 거리를 알려주는 목걸이",
-        "초음파센서와 부저, 진동 모터 등이 사용 됨",
+        { main: "시각장애인을 위해 만들어진 장애물과의 거리를 알려주는 목걸이", sub: [] },
+        { main: "초음파센서와 부저, 진동 모터 등이 사용 됨", sub: [] }
       ],
       keywords: ["Arduino", "C"],
       folder: "./eyelace",
@@ -221,7 +220,7 @@ export const awards = {
       subtitle: "광학 음악 인식 기반 자동 편곡 시스템",
       period: "2020.12.17",
       link: "https://bog.naver.com/PostView.nhn?blogId=dongseo_aisw&logNo=222199685902&categoryNo=6&parentCategoryNo=1&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView",
-      desc: ["~~한 프로젝트", "222"],
+      desc: [],
       keywords: [],
       folder: "",
       images: [],
@@ -233,7 +232,7 @@ export const awards = {
       subtitle: "광학 음악 인식 기반 자동 편곡 시스템",
       period: "2020.11.28",
       link: "https://blog.naver.com/PostView.nhn?blogId=dongseo_aisw&logNo=222199685902&categoryNo=6&parentCategoryNo=1&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView",
-      desc: ["~~한 프로젝트", "222"],
+      desc: [],
       keywords: [],
       folder: "",
       images: [],
@@ -245,7 +244,7 @@ export const awards = {
       subtitle: "컴퓨터 비전을 이용한 악보 인식 기반 자동 편곡 시스템",
       period: "2020.08.31",
       link: "https://www.dongseo.ac.kr/kr/?pCode=MN2000192&mode=view&idx=82307",
-      desc: ["~~한 프로젝트", "222"],
+      desc: [],
       keywords: [],
       folder: "",
       images: [],
@@ -257,7 +256,7 @@ export const awards = {
       subtitle: "광학 음악 인식을 이용한 자동 편곡 시스템",
       period: "2020.06.08",
       link: "https://uni.dongseo.ac.kr/sw/index.php?pCode=MN1000014&pg=2&mode=view&idx=442",
-      desc: ["~~한 프로젝트", "222"],
+      desc: [],
       keywords: [],
       folder: "",
       images: [],
@@ -269,7 +268,7 @@ export const awards = {
       subtitle: "",
       period: "2017.10.27",
       link: "https://m.blog.naver.com/computer_ck/221128532267",
-      desc: ["~~한 프로젝트", "222"],
+      desc: [],
       keywords: [],
       folder: "",
       images: [],
@@ -288,7 +287,7 @@ export const research = {
       period: "2020.01.18",
       link: "https://m.blog.naver.com/computer_ck/221128532267",
       desc: [
-        "구분 : Journal",
+        { main: "구분 : Journal", sub: [] }
       ],
       keywords: [],
       folder: "",
@@ -302,7 +301,7 @@ export const research = {
       period: "2020.11.28",
       link: "https://m.blog.naver.com/computer_ck/221128532267",
       desc: [
-        "구분 : Thesis"
+        { main: "구분 : Thesis", sub: [] }
       ],
       keywords: [],
       folder: "",
@@ -316,7 +315,7 @@ export const research = {
       period: "2020.11.28",
       link: "https://m.blog.naver.com/computer_ck/221128532267",
       desc: [
-        "구분 : Conference"
+        { main: "구분 : Conference", sub: [] }
       ],
       keywords: [],
       folder: "",
@@ -343,7 +342,7 @@ export const research = {
       period: "2020.08.31",
       link: "https://m.blog.naver.com/computer_ck/221128532267",
       desc: [
-        "구분 : SCOPUS",
+        { main: "구분 : SCOPUS", sub: [] },
       ],
       keywords: [],
       folder: "",
@@ -359,7 +358,7 @@ export const research = {
       period: "2020.07.09",
       link: "https://m.blog.naver.com/computer_ck/221128532267",
       desc: [
-        "구분 : Conference"
+        { main: "구분 : Conference", sub: [] },
       ],
       keywords: [],
       folder: "",
