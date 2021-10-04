@@ -8,7 +8,7 @@ class Left extends Component {
 
         return (
             <div className={styles.Left}>
-                <img className={intro.Profile} src={content.profile} alt='profile'></img>
+                <img className={intro.profile} src={content.profile} alt='profile'></img>
             </div>
         );
     }

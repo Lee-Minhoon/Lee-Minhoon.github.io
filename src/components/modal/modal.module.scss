@@ -9,78 +9,90 @@
 }
 
 .Modal {
+    display: flex;
     position: fixed;
     z-index: 99;
     @include location(0, 0, 0, 0);
     background-color: rgba(0, 0, 0, 0.6);
-    line-height: normal;
+    justify-content: center;
+    align-items: center;
     fill: none;
     stroke: currentColor;
     stroke-linecap: round;
     stroke-linejoin: round;
     transition: 0.3s;
-    section {
+    .Wrapper {
         position: relative;
-        @include location(50%, 0, 0, 50%);
-        @include size(75%, 95%);
-        background-color: #333;
-        text-align: center;
-        color: white;
-        transform: translate(-50%, -50%);
-        header {
-            position: inherit;
-            height: 7%;
-            @include font(white, normal, 300, 2rem);
+        width: 100%;
+        height: 0;
+        border: 5px solid white;
+        padding-bottom: 56.25%;
+        transform: scale(0.8);
+        section {
+            position: absolute;
+            @include size(100%, 100%);
+            background-color: #333;
+            text-align: center;
+            color: white;
+            header {
+                position: relative;
+                height: 7%;
+                @include font(white, normal, 300, 0.0104%);
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                svg {
+                    position: absolute;
+                    z-index: 99;
+                    @include location(13%, 0.5%, none, none);
+                    width: 50px;
+                    transition: 0.3s;
+                    @include event(0%, 0%);
+                }
+            }
             div {
-                @include center();
-            }
-            svg {
-                position: absolute;
-                z-index: 99;
-                @include location(13%, 0.5%, none, none);
-                width: 50px;
-                transition: 0.3s;
-                @include event(0%, 0%);
-            }
-        }
-        div {
-            position: inherit;
-            height: 83%;
-            svg {
-                position: absolute;
-                z-index: 5;
-                top: 50%;
-                width: 70px;
-                transition: 0.3s;
-                transform: translate(0%, -50%);
-                @include event(0%, -50%);
-            }
-            img {
-                height: 100%;
-                user-select: none;
-            }
-        }
-        footer {
-            @include center();
-            height: 10%;
-            button {
-                @include size(9rem, 6rem);
-                margin-right: 1.5rem;
-                padding: 0;
-                transition: 0.3s;
-                &:hover {
-                    cursor: pointer;
-                    box-shadow: 0 1px 3px 1px gray;
-                    transform: scale(1.05);
+                position: relative;
+                height: 83%;
+                svg {
+                    position: absolute;
+                    z-index: 5;
+                    top: 50%;
+                    width: 70px;
+                    transition: 0.3s;
+                    transform: translate(0%, -50%);
+                    @include event(0%, -50%);
                 }
                 img {
-                    @include size(100%, 100%);
+                    height: 100%;
+                    user-select: none;
                 }
             }
-            .current {
-                border: 3px solid #B2CCFF;
-                border-radius: 5%;
-                transform: scale(1.05);
+            footer {
+                display: flex;
+                height: 10%;
+                justify-content: center;
+                align-items: center;
+                button {
+                    @include size(9rem, 6rem);
+                    margin-right: 1.5rem;
+                    padding: 0;
+                    transition: 0.3s;
+                    &:hover {
+                        cursor: pointer;
+                        box-shadow: 0 1px 3px 1px gray;
+                        transform: scale(1.05);
+                    }
+                    img {
+                        @include size(100%, 100%);
+                    }
+                }
+                .current {
+                    border: 3px solid #B2CCFF;
+                    border-radius: 5%;
+                    transform: scale(1.05);
+                }
             }
         }
     }

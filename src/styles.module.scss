@@ -2,155 +2,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import './mixin.module.scss';
 
-/*
-content
-
-속성
-display
-position
-box-sizing
-overflow
-word-break
-
-배치
-z-index
-float
-top right bottom left
-
-외형
-width height
-border
-background-color
-margin padding
-
-컨텐츠
-justify-content: center;
-align-items: center;
-line-height
-text~ decoration align
-color
-font~ display family style size weight
-
-이미지
-user-select
-
-애니메이션
-transition
-cursor
-box shadow
-transform
-animation
-
-SVG
-fill
-stroke
-stroke-linecap
-stroke-linejoin
-*/
 
 .Resume {
-    width: 1200px;
+    @include media-size(90%, 1200px);
     margin: 0px auto;
     padding: 60px 0 60px 0;
     line-height: 2;
     .Container {
-        h1 {
-            line-height: 1.2;
-            @include font(black, normal, 400, 4rem);
-        }
-        h2 {
-            @include font(gray, normal, 300, 2rem);
-        }
         .Subject {
-            h3 {
-                border-bottom: 1px solid #CCCCCC;
-                margin-bottom: 2rem;
-                text-align: center;
-                @include font(black, normal, 300, 3rem);
-            }
+            border-bottom: 1px solid #CCCCCC;
+            margin-bottom: 2rem;
         }
         .Wrapper {
-            overflow: hidden;
-            word-break: break-all;
-            h4 {
-                line-height: 1.2;
-                @include font(black, normal, 500, 2rem);
+            display: flex;
+            flex-flow: wrap;
+            @media all and (max-width: 1023px) {
+                margin-bottom: 4rem;
             }
             margin-bottom: 2rem;
             .Left {
-                float: left;
-                @include size(30%, 100%);
-                padding-right: 5%;
-                a {
-                    text-decoration: none;
-                    @include font(gray, italic, 300, 1.5rem);
-                    transition: 0.3s;
-                    &:hover {
-                        color: black;
-                    }
+                @include media-size(100%, 30%);
+                @include media-text-align();
+                @media all and (max-width: 1023px) {
+                    padding-right: 0;
                 }
+                padding-right: 5%;
             }
             .Right {
-                float: left;
-                @include size(70%, 100%);
-                h5 {
-                    @include font(gray, italic, 300, 1.5rem);
-                }
-                p {
-                    @include font(black, normal, 300, 1.5rem);
-                }
+                @include media-size(100%, 70%);
                 .desc {
+                    @media all and (max-width: 1023px) {
+                        margin-top: 1rem;
+                    }
+                    margin-top: 0;
                     ul {
-
-
-                    }
-                    li {
-                        @include font(black, normal, 300, 1.5rem);
-                    }
-                    details {
-                        margin-left: -15px;
-                        @include font(black, normal, 300, 1.5rem);
-                        &:hover {
-                            cursor: pointer;
+                        @media all and (max-width: 1023px) {
+                            padding-inline-start: 20px;
+                        }
+                        padding-inline-start: 40px;
+                        .foldable {
+                            list-style: none;
+                            details {
+                                margin-left: -15px;
+                                summary:hover {
+                                    color: #B2CCFF;
+                                    cursor: pointer;
+                                }
+                            }
                         }
                     }
-                    .test {
-                        padding: 0px;
-                        margin: 0px;
-                        list-style: none;
-                        list-style-position: inside;
-                    }
-                }   
-                .Keyword {
-                    display: inline-block;
-                    margin: 0.5rem 0.5rem 0.5rem 0;
-                    padding: 1px 6px;
-                    background-color: rgb(239, 239, 239);
-                    line-height: normal;
-                    @include font(#333, normal, 300, 1.5rem);
-                    box-shadow: 0 1px 3px 0 gray;
                 }
-                .box {
-                    display: inline-block;
-                    @include size(12rem, 8rem);
-                    margin: 0.5rem 1rem 0 0;
-                    box-shadow: 0 1px 3px 0 gray;
-                    transition: 0.3s;
-                    &:hover {
-                        cursor: pointer;
-                        box-shadow: 0 2px 5px 2px gray;
-                        transform: scale(1.05);
+                .keywords {
+                    display: flex;
+                    flex-flow: wrap;
+                    @include media-content-align();
+                    span {
+                        display: inline-block;
+                        margin: 0.5rem 0.5rem 0.5rem 0;
+                        padding: 1px 6px;
+                        background-color: rgb(239, 239, 239);
+                        line-height: normal;
+                        @include font(#333, normal, 300, 1.5rem);
+                        box-shadow: 0 1px 3px 0 gray;
                     }
-                    .Image {
-                        @include size(100%, 100%);
+                }
+                .images {
+                    display: flex;
+                    flex-flow: wrap;
+                    @include media-content-align();
+                    img {
+                        display: inline-block;
+                        @include size(12rem, 8rem);
+                        margin: 0.5rem 1rem 0.5rem 0;
+                        box-shadow: 0 1px 3px 1px gray;
+                        transition: 0.3s;
+                        &:hover {
+                            cursor: pointer;
+                            box-shadow: 0 2px 5px 2px gray;
+                            transform: scale(1.05);
+                        }
                     }
                 }
             }
         }
     }
-}
-
-embed {
-    position: absolute;
-    @include size(100%, 100%);
 }

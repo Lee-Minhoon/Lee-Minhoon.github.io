@@ -10,7 +10,11 @@
 }
 
 .contact {
-    float: right;
+    display:flex;
+    @media all and (max-width: 1023px) {
+        justify-content: center;
+    }
+    justify-content: end;
     a {
         display: inline-block;
         position: relative;
