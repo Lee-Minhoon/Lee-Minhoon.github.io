@@ -2,7 +2,7 @@
 
 @mixin event($x, $y) {
     &:hover {
-        color: #B2CCFF;
+        color: #FFC745;
         cursor: pointer;
         transform: translate($x, $y) scale(1.2);
     }
@@ -13,86 +13,68 @@
     position: fixed;
     z-index: 99;
     @include location(0, 0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.6);
-    justify-content: center;
-    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    @include flex-center();
+    text-align: center;
+    color: white;
     fill: none;
     stroke: currentColor;
     stroke-linecap: round;
     stroke-linejoin: round;
-    transition: 0.3s;
-    .Wrapper {
-        position: relative;
-        width: 100%;
-        height: 0;
-        border: 5px solid white;
-        padding-bottom: 56.25%;
-        transform: scale(0.8);
-        section {
-            position: absolute;
-            @include size(100%, 100%);
-            background-color: #333;
-            text-align: center;
-            color: white;
-            header {
-                position: relative;
-                height: 7%;
-                @include font(white, normal, 300, 0.0104%);
-                div {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                svg {
-                    position: absolute;
-                    z-index: 99;
-                    @include location(13%, 0.5%, none, none);
-                    width: 50px;
-                    transition: 0.3s;
-                    @include event(0%, 0%);
-                }
+    section {
+        @include if-mobile() {
+            @include size(90vw, 56vw);
+        }
+        @include size(76vw, 47vw);
+        background-color: #333;
+        header {
+            display: flex;
+            position: relative;
+            height: 7%;
+            @include flex-center();
+            @include font(white, normal, 300, 1vw);
+            svg {
+                z-index: 99;
+                position: absolute;
+                @include location(13%, 0.5%, none, none);
+                width: 50px;
+                transition: 0.3s;
+                @include event(0%, 0%);
             }
-            div {
-                position: relative;
-                height: 83%;
-                svg {
-                    position: absolute;
-                    z-index: 5;
-                    top: 50%;
-                    width: 70px;
-                    transition: 0.3s;
-                    transform: translate(0%, -50%);
-                    @include event(0%, -50%);
-                }
-                img {
-                    height: 100%;
-                    user-select: none;
-                }
+        }
+        div {
+            position: relative;
+            height: 83%;
+            svg {
+                position: absolute;
+                top: 50%;
+                width: 70px;
+                transition: 0.3s;
+                transform: translate(0%, -50%);
+                @include event(0%, -50%);
             }
-            footer {
-                display: flex;
-                height: 10%;
-                justify-content: center;
-                align-items: center;
-                button {
-                    @include size(9rem, 6rem);
-                    margin-right: 1.5rem;
-                    padding: 0;
-                    transition: 0.3s;
-                    &:hover {
-                        cursor: pointer;
-                        box-shadow: 0 1px 3px 1px gray;
-                        transform: scale(1.05);
-                    }
-                    img {
-                        @include size(100%, 100%);
-                    }
-                }
-                .current {
-                    border: 3px solid #B2CCFF;
-                    border-radius: 5%;
+            img {
+                height: 100%;
+                user-select: none;
+            }
+        }
+        footer {
+            display: flex;
+            height: 10%;
+            @include flex-center();
+            img {
+                @include size(6vw, 4vw);
+                transition: 0.3s;
+                margin-right: 0.7vw;
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0 1px 3px 1px gray;
                     transform: scale(1.05);
                 }
+            }
+            .current {
+                border: 0.16vw solid #FFC745;
+                transform: scale(1.05);
             }
         }
     }

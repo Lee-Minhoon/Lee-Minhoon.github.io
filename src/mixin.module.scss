@@ -21,6 +21,17 @@
     }
 }
 
+@mixin flex-center() {
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin if-mobile() {
+    @media all and (max-width: 1023px) {
+        @content;
+    }
+}
+
 @mixin media-size($mobile, $desktop) {
     @media all and (max-width: 1023px) {
         width: $mobile;

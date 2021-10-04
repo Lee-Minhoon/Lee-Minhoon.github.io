@@ -1,7 +1,7 @@
 @import '../../mixin.module.scss';
 
 .profile {
-    @media all and (max-width: 1023px) {
+    @include if-mobile {
         margin: 1rem 0 2rem 0;
     }
     margin: 1rem 0 0 3rem;

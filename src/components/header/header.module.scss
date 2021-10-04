@@ -11,10 +11,10 @@
 
 .contact {
     display:flex;
-    @media all and (max-width: 1023px) {
+    @include if-mobile {
         justify-content: center;
     }
-    justify-content: end;
+    justify-content: flex-end;
     a {
         display: inline-block;
         position: relative;

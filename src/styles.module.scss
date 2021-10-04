@@ -16,14 +16,14 @@
         .Wrapper {
             display: flex;
             flex-flow: wrap;
-            @media all and (max-width: 1023px) {
+            @include if-mobile {
                 margin-bottom: 4rem;
             }
             margin-bottom: 2rem;
             .Left {
                 @include media-size(100%, 30%);
                 @include media-text-align();
-                @media all and (max-width: 1023px) {
+                @include if-mobile {
                     padding-right: 0;
                 }
                 padding-right: 5%;
@@ -31,12 +31,12 @@
             .Right {
                 @include media-size(100%, 70%);
                 .desc {
-                    @media all and (max-width: 1023px) {
+                    @include if-mobile {
                         margin-top: 1rem;
                     }
                     margin-top: 0;
                     ul {
-                        @media all and (max-width: 1023px) {
+                        @include if-mobile {
                             padding-inline-start: 20px;
                         }
                         padding-inline-start: 40px;
@@ -45,7 +45,7 @@
                             details {
                                 margin-left: -15px;
                                 summary:hover {
-                                    color: #B2CCFF;
+                                    @include font(black, normal, 400, 1.5rem);
                                     cursor: pointer;
                                 }
                             }
@@ -71,7 +71,6 @@
                     flex-flow: wrap;
                     @include media-content-align();
                     img {
-                        display: inline-block;
                         @include size(12rem, 8rem);
                         margin: 0.5rem 1rem 0.5rem 0;
                         box-shadow: 0 1px 3px 1px gray;
