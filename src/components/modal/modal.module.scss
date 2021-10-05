@@ -23,9 +23,9 @@
     stroke-linejoin: round;
     section {
         @include if-mobile() {
-            @include size(90vw, 56vw);
+            @include size(90vw, calc(90vw / 1.618));
         }
-        @include size(76vw, 47vw);
+        @include size(75vw, calc(75vw / 1.618));
         background-color: #333;
         header {
             display: flex;
@@ -34,21 +34,27 @@
             @include flex-center();
             @include font(white, normal, 300, 1vw);
             svg {
-                z-index: 99;
                 position: absolute;
-                @include location(13%, 0.5%, none, none);
-                width: 50px;
+                z-index: 99;
+                @include if-mobile() {
+                    width: 3.125vw;
+                }
+                width: 2.604vw;
                 transition: 0.3s;
+                @include location(0.5vw, 0.5vw, none, none);
                 @include event(0%, 0%);
             }
         }
-        div {
+        .viewer {
             position: relative;
             height: 83%;
             svg {
                 position: absolute;
                 top: 50%;
-                width: 70px;
+                @include if-mobile() {
+                    width: 4.375vw;
+                }
+                width: 3.645vw;
                 transition: 0.3s;
                 transform: translate(0%, -50%);
                 @include event(0%, -50%);
@@ -63,7 +69,10 @@
             height: 10%;
             @include flex-center();
             img {
-                @include size(6vw, 4vw);
+                @include if-mobile() {
+                    @include size(7.2vw, calc(7.2vw / 1.5));
+                }
+                @include size(6vw, calc(6vw / 1.5));
                 transition: 0.3s;
                 margin-right: 0.7vw;
                 &:hover {

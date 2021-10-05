@@ -12,6 +12,7 @@ class Right extends Component {
                     <a href={content.github}><i className="fab fa-github" /></a>
                     <a href={content.github}><i className="fas fa-blog" /></a>
                     <a href={content.github}><i className="fas fa-envelope" /></a>
+                    <a href={content.github}><i className="fas fa-envelope" /></a>
                 </div>
             </div >
         );

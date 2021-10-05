@@ -33,8 +33,8 @@ class Right extends Component {
             return <li>{desc.main}</li>
         })
         const keywords = content.keywords.map((keyword) => <span>{keyword}</span>)
-        const images = content.images.map((image, index) => <img className={styles.Image} onClick={() => this.controlModal(index)} src={`projects/${content.folder}/${image}.png`} alt='keyword'></img>)
-        const pdfs = content.pdfs.map((pdf) => <Link to={`/pdfviewer/${content.folder}/${pdf}`} target="_blank">PDF GO</Link>)
+        const images = content.images.map((image, index) => <img onClick={() => this.controlModal(index)} src={`projects/${content.folder}/${image}`} alt='keyword'></img>)
+        const pdfs = content.pdfs.map((pdf) => <Link to={`/pdfviewer/${content.folder}/${pdf.pdf}`} target="_blank"><img src={`projects/${content.folder}/${pdf.thumbnail}`} alt='pdf'></img></Link >)
 
         return (
             <div className={styles.Right}>
@@ -43,7 +43,7 @@ class Right extends Component {
                 <div className={styles.desc}><ul>{desc}</ul></div>
                 <div className={styles.keywords}>{keywords}</div>
                 <div className={styles.images}>{images}</div>
-                <div>{pdfs}</div>
+                <div className={styles.pdfs}>{pdfs}</div>
                 {this.state.hasModal && (
                     <Modal title={content.title} folder={content.folder} images={content.images} index={this.state.index} close={this.controlModal}></Modal>
                 )}

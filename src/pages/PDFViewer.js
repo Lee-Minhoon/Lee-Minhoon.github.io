@@ -2,7 +2,7 @@ import { Component } from "react";
 
 class PDFViewer extends Component {
     render() {
-        const pdf = `/projects/${this.props.match.params.folder}/${this.props.match.params.pdf}.pdf`
+        const pdf = `/projects/${this.props.match.params.folder}/${this.props.match.params.pdf}`
 
         return (
             <div>

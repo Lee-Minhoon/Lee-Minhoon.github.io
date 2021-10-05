@@ -40,6 +40,8 @@
 }
 
 @mixin media-content-align() {
+    display: flex;
+    flex-flow: wrap;
     @media all and (max-width: 1023px) {
         justify-content: center;
     }
