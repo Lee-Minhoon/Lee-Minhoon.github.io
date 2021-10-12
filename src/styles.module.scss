@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import './mixin.module.scss';
 
-
 .Resume {
-    @include media-size(90%, 1200px);
+    @include media-width(90%, 1200px);
     margin: 0px auto;
-    padding: 60px 0 60px 0;
+    padding: 60px 0 20px 0;
     line-height: 2;
     .Container {
         .Subject {
@@ -21,15 +18,15 @@
             }
             margin-bottom: 2rem;
             .Left {
-                @include media-size(100%, 30%);
-                @include media-text-align();
+                @include media-width(100%, 30%);
+                @include media-text-align;
                 @include if-mobile {
                     padding-right: 0;
                 }
                 padding-right: 5%;
             }
             .Right {
-                @include media-size(100%, 70%);
+                @include media-width(100%, 70%);
                 .desc {
                     @include if-mobile {
                         margin-top: 1rem;
@@ -53,34 +50,34 @@
                     }
                 }
                 .keywords {
-                    @include media-content-align();
+                    @include media-content-align;
                     span {
                         display: inline-block;
-                        @include if-mobile() {
+                        background-color: rgb(239, 239, 239);
+                        @include if-mobile {
                             margin: 0.5rem;
                         }
                         margin: 0.5rem 1rem 0.5rem 0;
                         padding: 1px 6px;
-                        background-color: rgb(239, 239, 239);
                         line-height: normal;
                         @include font(#333, normal, 300, 1.5rem);
                         box-shadow: 0 1px 3px 0 gray;
                     }
                 }
                 .images, .pdfs {
-                    @include media-content-align();
+                    @include media-content-align;
                     a {
                         font-size: 0;
                     }
                     img {
                         @include size(12rem, 8rem);
-                        @include if-mobile() {
+                        border-radius: 5%;
+                        @include if-mobile {
                             margin: 0.5rem;
                         }
                         margin: 0.5rem 1rem 0.5rem 0;
                         box-shadow: 0 1px 3px 1px gray;
                         transition: 0.3s;
-                        border-radius: 5%;
                         &:hover {
                             cursor: pointer;
                             box-shadow: 0 2px 5px 2px gray;

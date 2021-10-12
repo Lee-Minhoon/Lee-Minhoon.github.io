@@ -1,9 +1,0 @@
-@import '../../mixin.module.scss';
-
-.skill {
-    display: inline-block;
-    width: 50%;
-    li {
-        @include font(black, normal, 300, 1.5rem);
-    }
-}

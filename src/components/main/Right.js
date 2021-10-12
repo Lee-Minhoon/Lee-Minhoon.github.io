@@ -4,8 +4,8 @@ import Modal from '../modal/Modal';
 import styles from '../../styles.module.scss';
 
 class Right extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             index: null,
             hasModal: false,
@@ -19,22 +19,26 @@ class Right extends Component {
         });
     }
 
-    onClick = (index) => {
-        console.log(index);
-    }
-
     render() {
         const content = this.props.content;
-        const desc = content.desc.map((desc) => {
+        const desc = content.desc.map((desc, index) => {
             if (desc.sub.length) {
-                const subs = <ul>{desc.sub.map((sub) => <li>{sub}</li>)}</ul>
-                return <li className={styles.foldable}><details><summary>{desc.main}</summary>{subs}</details></li>
+                const subs = <ul>{desc.sub.map((sub, index) => <li key={index}>{sub}</li>)}</ul>
+                return (
+                    <li key={index} className={styles.foldable}>
+                        <details><summary>{desc.main}</summary>{subs}</details>
+                    </li>
+                )
             }
-            return <li>{desc.main}</li>
+            return <li key={index}>{desc.main}</li>
         })
-        const keywords = content.keywords.map((keyword) => <span>{keyword}</span>)
-        const images = content.images.map((image, index) => <img onClick={() => this.controlModal(index)} src={`projects/${content.folder}/${image}`} alt='keyword'></img>)
-        const pdfs = content.pdfs.map((pdf) => <Link to={`/pdfviewer/${content.folder}/${pdf.pdf}`} target="_blank"><img src={`projects/${content.folder}/${pdf.thumbnail}`} alt='pdf'></img></Link >)
+        const keywords = content.keywords.map((keyword, index) => <span key={index}>{keyword}</span>)
+        const images = content.images.map((image, index) => <img key={index} onClick={() => this.controlModal(index)} src={`projects/${content.folder}/${image}`} alt="alt_image" />)
+        const pdfs = content.pdfs.map((pdf, index) =>
+            <Link key={index} to={`/pdfviewer/${content.folder}/${pdf.pdf}`} target="_blank">
+                <img src={`projects/${content.folder}/${pdf.thumbnail}`} alt="alt_pdf" />
+            </Link >
+        )
 
         return (
             <div className={styles.Right}>

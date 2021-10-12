@@ -8,7 +8,7 @@ class Left extends Component {
         return (
             <div className={styles.Left}>
                 <h4>{content.period}</h4>
-                <a href={content.link} target='_blank' rel='noopener noreferrer'>{content.link}</a>
+                <a href={content.link} target="_blank" rel="noopener noreferrer">{content.link}</a>
             </div>
         );
     }

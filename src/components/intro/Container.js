@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import Subject from '../Subject';
-import Wrapper from './Wrapper'
+import Wrapper from './Wrapper';
 import styles from '../../styles.module.scss';
 
 class Container extends Component {
