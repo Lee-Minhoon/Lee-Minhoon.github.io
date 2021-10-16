@@ -1,0 +1,46 @@
+@import '../../mixin.module.scss';
+
+@keyframes progressbar {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: var(--proficiency);
+    }
+}
+
+.box {
+    @media all and (max-width: 680px) {
+        width: 340px;
+    }
+    width: 30%;
+    h4 {
+        text-align: center;
+    }
+    .desc {
+        margin-top: 2rem;
+        div {
+            display: flex;
+            align-items: center;
+            p {
+                width: 70%;
+            }
+            span {
+                position: relative;
+                width: 30%;
+                height: 12px;
+                background-color: #CCC;
+                z-index: -1;
+                border-radius: 8px;
+                .proficiency {
+                    border-radius: 10px;
+                    background-color: #333;
+                    width: var(--proficiency);
+                    animation: progressbar 2s ease-out;
+                    position: absolute;
+                }
+            }
+            
+        }
+    }
+}

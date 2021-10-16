@@ -1,6 +1,6 @@
 export const header = {
     name: "이민훈",
-    desc: "프로그래머 지망생",
+    desc: "소프트웨어 엔지니어",
     email: "hackids@naver.com",
     github: "https://github.com/Lee-Minhoon",
     blog: "https://hackids.tistory.com/",
@@ -10,12 +10,21 @@ export const intro = {
     subject: "Introduce",
     profile: "profile.jpg",
     intro: `
-    안녕하세요! 개발자 지망생 이민훈입니다. 뭔가를 만드는 것, 문제를 해결하는 것을
-    좋아하다 보니 어릴 때 부터 자연스레 개발자를 꿈꾸게 되었습니다. 지금까지도 꿈이 변치않아
-    현재도 개발자로 일하기위해 다양한 준비들을 하고 있습니다. 대학 생활 중 안드로이드
-    어플리케이션 개발, 웹 개발 등의 여러 프로젝트에 프론트엔드와 백엔드 가리지 않고
-    열심히 참여하였으며, 졸업후에는 알고리즘 공부, 자격증 취득, 안해봤던 기술 공부 등을
-    하고 있습니다. \n프로그래머라는
+    안녕하세요! 개발자 지망생 이민훈입니다. 컴퓨터를 좋아했고, 뭔갈 스스로 만드는 걸
+    좋아하다 보니 자연스레 개발자를 꿈꾸게 되었습니다. 학부 시절에는 안드로이드 애플리케이션
+    개발, 웹 개발 등의 여러 프로젝트에 프론트엔드와 백엔드 가리지 않고 참여하였습니다.
+    졸업 후에는 스스로 부족하다고 생각하는 부분을 채우고 있습니다. 자료구조와 알고리즘 공부,
+    자격증 취득, 웹 개발자로 취업하기 위한 라이브러리와 프레임워크 경험 등을 해보고 있습니다.
+
+    
+    웹 개발자로 취업하기 위해 공부하고 있지만, 여러 프로젝트를 진행할 때 모두 재미가 있었고,
+    나름의 매력이 있었기 때문에 개발이라면 어떤 언어와 환경이던 크게 마다하지 않습니다.
+
+
+    잘 정돈된 것들을 좋아합니다. 가독성이 높은 코드, 클린 코드를 구현하기 위해 나름의
+    규칙을 정해 코드를 짜고 있습니다. 길지 않은 시간이지만 깃허브나 블로그도 제 생각과 경험을
+    잘 정리하여 기록하기 위해 노력 중입니다. 훌륭한 개발자분들과 소통하고 배우며 끊임없이 성장하는
+    개발자가 되고 싶습니다.
     `
 };
 
@@ -24,15 +33,28 @@ export const skills = {
     contents: [
         {
             category: "Frontend",
-            desc: ["React", "HTML", "CSS", "JavaScript"]
+            desc: [
+                { name: "React", proficiency: 25 },
+                { name: "HTML", proficiency: 50 },
+                { name: "CSS", proficiency: 45 },
+                { name: "JavaScript", proficiency: 30 }
+            ]
         },
         {
             category: "Backend",
-            desc: ["Nodejs", "PHP", "C++", "JAVA", "Python"]
+            desc: [
+                { name: "Nodejs", proficiency: 20 },
+                { name: "PHP", proficiency: 40 },
+                { name: "C++", proficiency: 45 },
+                { name: "JAVA", proficiency: 30 },
+                { name: "Python", proficiency: 50 }
+            ]
         },
         {
             category: "DevOps",
-            desc: ["MySQL"]
+            desc: [
+                { name: "MySQL", proficiency: 40 }
+            ]
         },
     ],
 };
@@ -46,10 +68,17 @@ export const experience = {
             period: "2020.07 ~ 2020.08",
             link: "",
             desc: [
-                { main: "Python을 이용해 AI데이터 라벨링 툴 제작", sub: [] },
-                { main: "UI 구현을 위해 PyQt5, 데이터 조작을 위해 Pandas, NumPy 등을 사용함", sub: [] }
+                {
+                    main: "Python을 이용해 AI 데이터 라벨링 툴 제작",
+                    sub: [
+                        "UI 구현을 위해 PyQt5, 데이터 조작을 위해 Pandas, NumPy 등의 라이브러리를 사용함",
+                        "마우스 휠을 통한 이미지 확대/축소, 클릭을 통한 이미지 이동 등의 기능 구현",
+                        "라벨링이 완료된 후 json과 같은 형태로 자동 추출됨"
+                    ]
+                },
+
             ],
-            keywords: [],
+            keywords: ["Python", "PyQt5", "Pandas", "Numpy"],
             folder: "",
             images: [],
             pdfs: []
@@ -61,12 +90,18 @@ export const projects = {
     subject: "Projects",
     contents: [
         {
-            title: "깃허브 이력서",
-            subtitle: "리액트를 이용해 만들고 깃허브 페이지를 이용해 배포한 이력서",
+            title: "Simple React Resume Teaplate",
+            subtitle: "리액트를 이용해 만들어진 Github Pages 용 이력서 템플릿",
             period: "2020.09 ~ ",
-            link: "https://github.com/Lee-Minhoon/Lee-Minhoon.github.io",
+            link: "https://github.com/Lee-Minhoon/simple-react-resume-template",
             desc: [
-                { main: "웹 프론트엔드 프레임워크인 리액트 실습과 더불어 하나쯤은 있으면 좋겠다 싶었던 이력서페이지를 작성하게 됨", sub: [] }
+                {
+                    main: "다양한 기능이 포함된 개발자용 리액트 + Github Pages 기반 이력서 템플릿",
+                    sub: [
+                        "이미지를 확대하여 볼 수 있는 이미지 모달 기능",
+                        "이미지 외에도 다양한 문서들을 PDF 형식으로 변환해 제공할 수 있는 PDF Viewer 기능"
+                    ]
+                }
             ],
             keywords: ["React", "HTML", "CSS", "JavaScript"],
             folder: "OMR-based-automatic-arrangement-system",
@@ -79,13 +114,26 @@ export const projects = {
             period: "2020.03 ~ 2020.12",
             link: "https://github.com/Lee-Minhoon/capstone-design",
             desc: [
-                { main: "비전문가들도 악보를 데이터화하여 쉽게 편집하고 음악 파일로 출력할 수 있는 악보 인식 기반 편곡 장치를 제공하고자 함", sub: [] },
-                { main: "사용자는 편곡하고자 하는 음악의 악보를 입력하고 편곡된 음악 파일을 제공 받음", sub: [1, 2, 3] },
-                { main: "크게 광학 음악 인식 모듈과 자동 편곡 모듈로 구성", sub: [1, 2, 3] },
-                { main: "광학 음악 인식 모듈에 OpenCV 라이브러리를 사용하였으며, 속도를 위해 jni + ndk를 사용함", sub: [] },
-                { main: "클라이언트는 안드로이드 애플리케이션, 서버는 파이썬으로 구현", sub: [] },
-                { main: "악보를 인식하는 과정은 30여 개가 넘는 악보의 구성요소들을 인식하고 분류해야함", sub: [] },
-                { main: "본 프로젝트를 통해 작게 나마 컴퓨터비전, 머신 러닝 등 인공지능 분야의 학습계기가 됨", sub: [] }
+                {
+                    main: "비전문가들도 악보를 데이터화하여 쉽게 편집하고 음악 파일로 출력할 수 있는 악보 인식 기반 편곡 애플리케이션",
+                    sub: [
+                        "사용자는 편곡하고자 하는 음악의 악보를 입력하고 편곡된 음악 파일을 제공 받음"
+                    ]
+                },
+                {
+                    main: "크게 광학 음악 인식 모듈과 자동 편곡 모듈로 구성",
+                    sub: [
+                        "클라이언트(광학 음악 인식 모듈)는 안드로이드 애플리케이션, 서버(자동 편곡 모듈)는 파이썬으로 구현",
+                        "광학 음악 인식 모듈에 OpenCV 라이브러리를 사용하였으며, 속도를 위해 jni + ndk를 사용함"
+                    ]
+                },
+                {
+                    main: "본 프로젝트를 통해 작게나마 컴퓨터 비전, 머신 러닝 등 인공지능 분야의 학습 계기가 됨",
+                    sub: [
+                        "악보의 구성요소들이 가진 구조적 특성을 이용해 인식 모듈을 구현",
+                        "딥러닝을 통해 멜로디 기반 화성을 생성"
+                    ]
+                }
             ],
             keywords: ["OpenCV", "TensorFlow", "C++", "Java", "Python", "Android"],
             folder: "OMR-based-automatic-arrangement-system",
@@ -98,8 +146,10 @@ export const projects = {
             period: "2019.09 ~ 2019.12",
             link: "https://github.com/Lee-Minhoon/PC-auction",
             desc: [
-                { main: "PC부품에 대한 지식 없이 조립형 PC를 구매할 수 있는 PC견적 및 경매 사이트", sub: [] },
-                { main: "로그인/로그아웃, 회원가입, 역경매/입찰, 페이징, 관리자 페이지 등의 기능 제공", sub: [] },
+                {
+                    main: "PC 부품에 대한 지식 없이 조립형 PC를 구매할 수 있는 PC 견적 및 경매 사이트",
+                    sub: ["로그인/로그아웃, 회원가입, 역경매/입찰, 페이징, 관리자 페이지 등의 기능 제공"]
+                },
                 { main: "HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현", sub: [] }
             ],
             keywords: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
@@ -113,8 +163,10 @@ export const projects = {
             period: "2019.09 ~ 2019.12",
             link: "https://github.com/Lee-Minhoon/database-practice",
             desc: [
-                { main: "데이터베이스 실습을 위해 알라딘, YES24, 리디북스와 같은 온라인 도서 구매 사이트를 구현", sub: [] },
-                { main: "로그인/로그아웃, 회원가입, 마이페이지(카드, 장바구니, 주문내역, 주문상세), 주문, 리뷰 등의 기능 제공", sub: [] },
+                {
+                    main: "데이터베이스 실습을 위해 알라딘, YES24, 리디북스와 같은 온라인 도서 구매 사이트를 구현",
+                    sub: ["로그인/로그아웃, 회원가입, 마이페이지(카드, 장바구니, 주문내역, 주문상세), 주문, 리뷰 등의 기능 제공"]
+                },
                 { main: "HTML + CSS + JavaScirpt로 클라이언트, Apache + PHP로 로컬서버 구현", sub: [] }
             ],
             keywords: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
@@ -128,10 +180,14 @@ export const projects = {
             period: "2019.09 ~ 2019.12",
             link: "",
             desc: [
-                { main: "해당 프로젝트는 개발 직전 단계까지의 설계를 목표로 두고 다양한 설계문서를 작성 해 본 프로젝트", sub: [] },
-                { main: "설계 문서는 프로젝트 정의서, 요구사항기술서, 클래스분석서, UI설계서, 데이트베이스설계서 등을 작성", sub: [] },
                 { main: "플리마켓의 셀러와 주최자, 참가자에게 기존의 불편한 요소들을 해소할 수 있도록 하는 플리마켓 통합 관리 시스템", sub: [] },
-                { main: "프로젝트 설계방법과 StarUML과 같은 설계툴에 대해 배울수 있었음", sub: [] }
+                {
+                    main: "프로젝트 설계 방법과 StarUML과 같은 설계툴에 대해 배울 수 있었음",
+                    sub: [
+                        "개발 직전 단계까지의 설계를 목표로 두고 다양한 설계문서를 작성해 본 프로젝트",
+                        "프로젝트 정의서, 요구사항 기술서, 클래스 분석서, UI 설계서, 데이트베이스 설계서 등을 작성"
+                    ]
+                }
             ],
             keywords: ["StarUML"],
             folder: "flea-market-integrated-management-system",
@@ -151,8 +207,10 @@ export const projects = {
             link: "https://github.com/Lee-Minhoon/tap-the-taxi-2",
             desc: [
                 { main: "Firebase를 대체할 웹 서버를 구현하여 만든 TAPC 후속 프로젝트", sub: [] },
-                { main: "클라이언트는 안드로이드 애플리케이션, 서버는 Node.js, DB는 MySQL로 구현", sub: [] },
-                { main: "로그인/로그아웃, 회원가입 등을 위한 http 서버와 매칭/채팅을 위한 소켓 서버를 구현", sub: [] },
+                {
+                    main: "클라이언트는 안드로이드 애플리케이션, 서버는 Node.js, DB는 MySQL로 구현",
+                    sub: ["로그인/로그아웃, 회원가입 등을 위한 http 서버와 매칭/채팅을 위한 소켓 서버를 구현"]
+                },
                 { main: "안드로이드 애플리케이션과 웹서버를 처음 연동한 프로젝트", sub: [] }
             ],
             keywords: ["Nodejs", "MySQL", "Java", "JavaScript", "Android"],
@@ -166,9 +224,11 @@ export const projects = {
             period: "2019.03 ~ 2019.06",
             link: "https://github.com/Lee-Minhoon/tap-the-taxi-1",
             desc: [
-                { main: "고지대에 위치한 학교의 지리적 특성에 택시합승관련 어플리케이션을 설계, 개발", sub: [] },
+                {
+                    main: "고지대에 위치한 학교의 지리적 특성에 택시 합승 관련 애플리케이션을 설계, 개발",
+                    sub: ["로그인/로그아웃, 회원가입, 방 생성/참여, 채팅 기능 등의 기능 구현"]
+                },
                 { main: "웹 서버에 대한 지식이 전무해 Google Firebase를 통해 데이터베이스를 구현", sub: [] },
-                { main: "로그인/로그아웃, 회원가입, 방 생성/참여, 채팅 기능 등이 포함", sub: [] }
             ],
             keywords: ["Firebase", "Java", "Android"],
             folder: "tap-the-taxi-1",
@@ -181,8 +241,8 @@ export const projects = {
             period: "2018.03 ~ 2018.06",
             link: "https://github.com/Lee-Minhoon/programming-forum",
             desc: [
-                { main: "한국에 대형 프로그래밍 커뮤니티가 부족하다 생각하여 만든 사이트", sub: [] },
-                { main: "서버가 없는 정적 페이지이며 HTML + CSS + JavaScript를 처음으로 실습 해본 프로젝트", sub: [] }
+                { main: "한국에 대형 프로그래밍 커뮤니티가 부족하다고 생각하여 만든 사이트", sub: [] },
+                { main: "서버가 없는 정적 페이지이며 HTML + CSS + JavaScript를 처음으로 실습해 본 프로젝트", sub: [] }
             ],
             keywords: ["HTML", "CSS", "JavaScript"],
             folder: "programming-forum",
@@ -195,8 +255,10 @@ export const projects = {
             period: "2018.03 ~ 2018.06",
             link: "",
             desc: [
-                { main: "시각장애인을 위해 만들어진 장애물과의 거리를 알려주는 목걸이", sub: [] },
-                { main: "초음파센서와 부저, 진동 모터 등이 사용 됨", sub: [] }
+                {
+                    main: "아두이노를 통해 제작된 시각장애인을 위해 만들어진 장애물과의 거리를 알려주는 목걸이",
+                    sub: ["초음파센서와 부저, 진동 모터 등이 사용됨"]
+                },
             ],
             keywords: ["Arduino", "C"],
             folder: "eyelace",

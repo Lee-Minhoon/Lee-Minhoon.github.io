@@ -24,7 +24,7 @@ h2 {
 
 h3 {
     text-align: center;
-    @include font(black, normal, 300, 3rem);
+    @include font(#333, normal, 300, 3rem);
 }
 
 h4 {
