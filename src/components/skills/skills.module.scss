@@ -10,14 +10,16 @@
 }
 
 .box {
-    @media all and (max-width: 680px) {
-        width: 340px;
-    }
-    width: 30%;
+    display: flex;
+    flex-direction: column;
+    @include media-width(90%, 30%);
+    margin: 0 1.5% 0 1.5%;
+    align-items: center;
     h4 {
         text-align: center;
     }
     .desc {
+        width: calc(1116px * 0.3);
         margin-top: 2rem;
         div {
             display: flex;
@@ -27,17 +29,15 @@
             }
             span {
                 position: relative;
-                width: 30%;
-                height: 12px;
-                background-color: #CCC;
-                z-index: -1;
+                @include size(30%, 12px);
                 border-radius: 8px;
+                background-color: $silver;
                 .proficiency {
-                    border-radius: 10px;
-                    background-color: #333;
-                    width: var(--proficiency);
-                    animation: progressbar 2s ease-out;
                     position: absolute;
+                    width: var(--proficiency);
+                    border-radius: inherit;
+                    background-color: $darkgray;
+                    animation: progressbar 2s ease-out;
                 }
             }
             
