@@ -483,6 +483,6 @@ export const certificate = {
     ],
 };
 
-export const footer = { updated: "2021. 10. 11." };
+export const footer = { updated: "2021. 10. 18." };
 
 export const main = [experience, projects, awards, research, education, certificate]

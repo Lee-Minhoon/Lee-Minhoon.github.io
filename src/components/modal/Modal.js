@@ -47,7 +47,7 @@ class Modal extends Component {
                         {thumbnails}
                     </footer>
                 </section>
-            </ div >
+            </div>
         );
     }
 }
