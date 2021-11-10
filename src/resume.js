@@ -161,7 +161,7 @@ export const projects = {
             title: "인터넷 도서 구매 시스템",
             subtitle: "데이터베이스설계 교과목 연계 프로젝트",
             period: "2019.09 ~ 2019.12",
-            link: "https://github.com/Lee-Minhoon/database-practice",
+            link: "https://github.com/Lee-Minhoon/online-book-purchase-system",
             desc: [
                 {
                     main: "데이터베이스 실습을 위해 알라딘, YES24, 리디북스와 같은 온라인 도서 구매 사이트를 구현",
@@ -483,6 +483,6 @@ export const certificate = {
     ],
 };
 
-export const footer = { updated: "2021. 10. 18." };
+export const footer = { updated: "2021. 11. 10." };
 
 export const main = [experience, projects, awards, research, education, certificate]
