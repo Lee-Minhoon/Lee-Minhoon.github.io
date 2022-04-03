@@ -5,11 +5,12 @@ import skills from './skills.module.scss';
 class Right extends Component {
     render() {
         const content = this.props.content;
-        const desc = content.desc.map((desc, index) => <li key={index}>{desc}</li>);
+        const names = content.names.map((name, index) => <li key={index}>{name}</li>);
 
         return (
             <div className={styles.Right}>
-                <ul className={skills.desc}>{desc}</ul>
+                <span>{content.desc}</span>
+                <ul className={skills.names}>{names}</ul>
             </div>
         );
     }

@@ -1,6 +1,6 @@
 @import '../../mixin.module.scss';
 
-.desc {
+.names {
     line-height: 1.5;
     li {
         @include font($darkgray, normal, 400, 1.6rem);

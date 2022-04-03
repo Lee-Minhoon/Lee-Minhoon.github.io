@@ -27,6 +27,18 @@
             }
             .Right {
                 @include media-width(100%, 72%);
+                .title {
+                    @include media-content-align;
+                    a {
+                        align-self: center;
+                        line-height: normal;
+                        margin-left: 0.5rem;
+                        @include font($em, normal, 400, 1.5rem);
+                    }
+                }
+                h4 {
+                    display: inline-block;
+                }
                 .desc {
                     @include if-mobile {
                         margin-top: 1rem;

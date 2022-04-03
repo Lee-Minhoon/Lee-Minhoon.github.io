@@ -42,10 +42,13 @@ b {
     @include font($white, normal, 300, 1vw);
 }
 
-span,
 li,
 p {
     @include font($black, normal, 300, 1.6rem);
+}
+
+span {
+    @include font($darkgray, normal, 400, 1.6rem);
 }
 
 a {

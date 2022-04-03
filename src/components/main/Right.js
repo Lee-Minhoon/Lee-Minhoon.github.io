@@ -70,7 +70,14 @@ class Right extends Component {
 
         return (
             <div className={styles.Right}>
-                <h4>{content.title}</h4>
+                <div className={styles.title}>
+                    <h4>{content.title}</h4>
+                    {content.demo && (
+                        <a href={content.demo} target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-link"></i>링크
+                        </a>
+                    )}
+                </div>
                 <h5>{content.subtitle}</h5>
                 <div className={styles.desc}>
                     <ul>{desc}</ul>
